@@ -9,7 +9,8 @@
 #include <malloc.h>
 
 
-#define RESULT_OK 0
+#define RESULT_OK 0x0
+#define NULL_PTR_ERROR 0x1
 
 template<class T>
 class LinearList {
@@ -19,12 +20,12 @@ public :
     public:
         static const size_t INIT_SIZE = 10;
         T *data = NULL;
-        size_t size = INIT_SIZE;
+        size_t size = 0;
     };
 
-    static int InitialList(List &l);
+    static int InitialList(List **l);
 
-    static int DestroyList(List &l);
+    static int DestroyList(List **l);
 
     static int ClearList(List &l);
 
@@ -48,25 +49,32 @@ public :
 };
 
 template<class T>
-int LinearList<T>::InitialList(List &l) {
-    l.data = (T *) calloc(List::INIT_SIZE, sizeof(T));
-    l.size = List::INIT_SIZE;
+int LinearList<T>::InitialList(List **l) {
+    *l = new List();
+    (**l).data = (T *) calloc(List::INIT_SIZE, sizeof(T));
     return RESULT_OK;
 }
 
 template<class T>
-int LinearList<T>::DestroyList(List &l) {
-    return 0;
+int LinearList<T>::DestroyList(List **l) {
+    ClearList(**l);
+    delete (*l);
+    *l = nullptr;
+    return RESULT_OK;
 }
 
 template<class T>
 int LinearList<T>::ClearList(List &l) {
-    return 0;
+    if ((l).data != nullptr) {
+        delete l.data;
+    }
+    l.data = nullptr;
+    return RESULT_OK;
 }
 
 template<class T>
 bool LinearList<T>::ListEmpty(List &l) {
-    return false;
+    return nullptr == l.data;
 }
 
 template<class T>
