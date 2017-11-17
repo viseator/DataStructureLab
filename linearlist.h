@@ -31,7 +31,7 @@ public :
 
     static bool ListEmpty(List &l);
 
-    static int ListLength(List &l);
+    static size_t ListLength(List &l);
 
     static int GetElem(List &l, int i, T &e);
 
@@ -78,8 +78,8 @@ bool LinearList<T>::ListEmpty(List &l) {
 }
 
 template<class T>
-int LinearList<T>::ListLength(List &l) {
-
+size_t LinearList<T>::ListLength(List &l) {
+    return l.size;
 }
 
 template<class T>
