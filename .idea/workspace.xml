@@ -49,23 +49,23 @@
       <file leaf-file-name="linearlist.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linearlist.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="162" column="8" lean-forward="false" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+            <state relative-caret-position="850">
+              <caret line="183" column="4" lean-forward="false" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
               <folding>
                 <element signature="e#120#137#0" expanded="true" />
                 <element signature="e#253#262#0" expanded="true" />
-                <element signature="e#1122#1131#0" expanded="true" />
-                <element signature="e#1288#1297#0" expanded="true" />
-                <element signature="e#1475#1484#0" expanded="true" />
-                <element signature="e#1747#1756#0" expanded="true" />
-                <element signature="e#1834#1843#0" expanded="true" />
-                <element signature="e#1919#1928#0" expanded="true" />
-                <element signature="e#2094#2103#0" expanded="true" />
-                <element signature="e#2379#2388#0" expanded="true" />
-                <element signature="e#2712#2721#0" expanded="true" />
-                <element signature="e#3050#3059#0" expanded="true" />
-                <element signature="e#3352#3361#0" expanded="true" />
-                <element signature="e#3624#3633#0" expanded="true" />
+                <element signature="e#1126#1135#0" expanded="true" />
+                <element signature="e#1292#1301#0" expanded="true" />
+                <element signature="e#1479#1488#0" expanded="true" />
+                <element signature="e#1751#1760#0" expanded="true" />
+                <element signature="e#1838#1847#0" expanded="true" />
+                <element signature="e#1923#1932#0" expanded="true" />
+                <element signature="e#2098#2107#0" expanded="true" />
+                <element signature="e#2383#2392#0" expanded="true" />
+                <element signature="e#2716#2725#0" expanded="true" />
+                <element signature="e#3054#3063#0" expanded="true" />
+                <element signature="e#3356#3365#0" expanded="true" />
+                <element signature="e#3637#3646#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,6 +92,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LIstDe</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -189,12 +194,12 @@
       <option name="presentableId" value="Default" />
       <updated>1510904856356</updated>
       <workItem from="1510904858998" duration="4477000" />
-      <workItem from="1510909357095" duration="5187000" />
+      <workItem from="1510909357095" duration="5438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9664000" />
+    <option name="totallyTimeSpent" value="9915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="3" width="1920" height="1077" extended-state="7" />
@@ -280,18 +285,18 @@
           <folding>
             <element signature="e#120#137#0" expanded="true" />
             <element signature="e#253#262#0" expanded="true" />
-            <element signature="e#1122#1131#0" expanded="true" />
-            <element signature="e#1288#1297#0" expanded="true" />
-            <element signature="e#1475#1484#0" expanded="true" />
-            <element signature="e#1747#1756#0" expanded="true" />
-            <element signature="e#1834#1843#0" expanded="true" />
-            <element signature="e#1919#1928#0" expanded="true" />
-            <element signature="e#2094#2103#0" expanded="true" />
-            <element signature="e#2379#2388#0" expanded="true" />
-            <element signature="e#2712#2721#0" expanded="true" />
-            <element signature="e#3050#3059#0" expanded="true" />
-            <element signature="e#3352#3361#0" expanded="true" />
-            <element signature="e#3624#3633#0" expanded="true" />
+            <element signature="e#1126#1135#0" expanded="true" />
+            <element signature="e#1292#1301#0" expanded="true" />
+            <element signature="e#1479#1488#0" expanded="true" />
+            <element signature="e#1751#1760#0" expanded="true" />
+            <element signature="e#1838#1847#0" expanded="true" />
+            <element signature="e#1923#1932#0" expanded="true" />
+            <element signature="e#2098#2107#0" expanded="true" />
+            <element signature="e#2383#2392#0" expanded="true" />
+            <element signature="e#2716#2725#0" expanded="true" />
+            <element signature="e#3054#3063#0" expanded="true" />
+            <element signature="e#3356#3365#0" expanded="true" />
+            <element signature="e#3637#3646#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -341,23 +346,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linearlist.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="162" column="8" lean-forward="false" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+        <state relative-caret-position="850">
+          <caret line="183" column="4" lean-forward="false" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
           <folding>
             <element signature="e#120#137#0" expanded="true" />
             <element signature="e#253#262#0" expanded="true" />
-            <element signature="e#1122#1131#0" expanded="true" />
-            <element signature="e#1288#1297#0" expanded="true" />
-            <element signature="e#1475#1484#0" expanded="true" />
-            <element signature="e#1747#1756#0" expanded="true" />
-            <element signature="e#1834#1843#0" expanded="true" />
-            <element signature="e#1919#1928#0" expanded="true" />
-            <element signature="e#2094#2103#0" expanded="true" />
-            <element signature="e#2379#2388#0" expanded="true" />
-            <element signature="e#2712#2721#0" expanded="true" />
-            <element signature="e#3050#3059#0" expanded="true" />
-            <element signature="e#3352#3361#0" expanded="true" />
-            <element signature="e#3624#3633#0" expanded="true" />
+            <element signature="e#1126#1135#0" expanded="true" />
+            <element signature="e#1292#1301#0" expanded="true" />
+            <element signature="e#1479#1488#0" expanded="true" />
+            <element signature="e#1751#1760#0" expanded="true" />
+            <element signature="e#1838#1847#0" expanded="true" />
+            <element signature="e#1923#1932#0" expanded="true" />
+            <element signature="e#2098#2107#0" expanded="true" />
+            <element signature="e#2383#2392#0" expanded="true" />
+            <element signature="e#2716#2725#0" expanded="true" />
+            <element signature="e#3054#3063#0" expanded="true" />
+            <element signature="e#3356#3365#0" expanded="true" />
+            <element signature="e#3637#3646#0" expanded="true" />
           </folding>
         </state>
       </provider>

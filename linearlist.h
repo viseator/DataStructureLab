@@ -49,7 +49,7 @@ public :
 
     static int ListDelete(List *l, size_t i, T &e);
 
-    static int ListTraverse(List *l, void (*visit)());
+    static int ListTraverse(List *l, void (*visit)(T));
 };
 
 template<class T>
@@ -167,8 +167,14 @@ int LinearList<T>::ListDelete(List *l, size_t i, T &e) {
 }
 
 template<class T>
-int LinearList<T>::ListTraverse(List *l, void (*visit)()) {
-    return 0;
+int LinearList<T>::ListTraverse(List *l, void (*visit)(T)) {
+    if (l == nullptr) {
+        return NULL_PTR_ERROR;
+    }
+    for (size_t i = 0; i < l->size; i++) {
+        visit(l->data[i]);
+    }
+    return RESULT_OK;
 }
 
 int LinearList::EnsureCapacity(LinearList::List *l, size_t new_capacity) {
