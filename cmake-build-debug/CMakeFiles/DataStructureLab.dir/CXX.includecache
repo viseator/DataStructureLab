@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viseator/study/DataStructureLab/linearlist.h
+cstdio
+-
+malloc.h
+-
+
+/home/viseator/study/DataStructureLab/main.cpp
+iostream
+-
+linearlist.h
+/home/viseator/study/DataStructureLab/linearlist.h
+
