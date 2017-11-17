@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/viseator/study/DataStructureLab/linearlist.h">
+		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linearlist.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.cpp">

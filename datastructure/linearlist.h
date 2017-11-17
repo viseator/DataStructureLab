@@ -19,7 +19,7 @@ public :
     class List {
     private:
     public:
-        static const size_t INIT_SIZE = 10;
+        static const size_t INIT_SIZE = 100;
         T *data = NULL;
         size_t size = 0;
         size_t capacity = INIT_SIZE;
@@ -72,6 +72,7 @@ int LinearList<T>::DestroyList(List **l) {
 template<class T>
 int LinearList<T>::ClearList(List *l) {
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
     }
     delete l->data;
@@ -93,7 +94,12 @@ size_t LinearList<T>::ListLength(List *l) {
 
 template<class T>
 int LinearList<T>::GetElem(List *l, int i, T &e) {
+    if (i < 1 || i > l->size + 1) {
+        std::cout << "Invalid i" << std::endl;
+        return RESULT_UNDEFINED_ERROR;
+    }
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
     }
     e = l->data[i];
@@ -103,6 +109,7 @@ int LinearList<T>::GetElem(List *l, int i, T &e) {
 template<class T>
 int LinearList<T>::LocateElem(List *l, T e, bool (*compare)(T, T)) {
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
     }
     for (int i = 0; i < l->size; ++i) {
@@ -116,6 +123,7 @@ int LinearList<T>::LocateElem(List *l, T e, bool (*compare)(T, T)) {
 template<class T>
 int LinearList<T>::PriorElem(List *l, T cur_e, T &pre_e) {
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
     }
     for (int i = 1; i < l->size; ++i) {
@@ -130,11 +138,12 @@ int LinearList<T>::PriorElem(List *l, T cur_e, T &pre_e) {
 template<class T>
 int LinearList<T>::NextElem(List *l, T cur_e, T &next_e) {
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
     }
     for (int i = 0; i < l->size - 1; ++i) {
         if (l->data[i] == cur_e) {
-            next_e - l->data[i + 1];
+            next_e = l->data[i + 1];
             return RESULT_OK;
         }
     }
@@ -144,7 +153,12 @@ int LinearList<T>::NextElem(List *l, T cur_e, T &next_e) {
 template<class T>
 int LinearList<T>::ListInsert(List *l, int i, T e) {
     if (l == nullptr) {
+        std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
+    }
+    if (i < 1 || i > l->size + 1) {
+        std::cout << "Invalid i" << std::endl;
+        return RESULT_UNDEFINED_ERROR;
     }
     EnsureCapacity(l, ++l->size);
     for (size_t j = l->size; j >= i; --j) {
@@ -159,11 +173,16 @@ int LinearList<T>::ListDelete(List *l, size_t i, T &e) {
     if (l == nullptr) {
         return NULL_PTR_ERROR;
     }
+    if (i < 1 || i > l->size + 1) {
+        std::cout << "Invalid i" << std::endl;
+        return RESULT_UNDEFINED_ERROR;
+    }
+    T data = l->data[i - 1];
     for (size_t j = i - 1; j < l->size - 1; j++) {
         l->data[j] = l->data[j + 1];
     }
     EnsureCapacity(l, --l->size);
-    return 0;
+    return data;
 }
 
 template<class T>
@@ -177,14 +196,15 @@ int LinearList<T>::ListTraverse(List *l, void (*visit)(T)) {
     return RESULT_OK;
 }
 
-int LinearList::EnsureCapacity(LinearList::List *l, size_t new_capacity) {
+template<class T>
+int LinearList<T>::EnsureCapacity(LinearList::List *l, size_t new_capacity) {
     if (new_capacity > l->capacity) {
-        l->data = realloc(l->data, l->capacity * 2);
+        l->data = (T *) realloc(l->data, l->capacity * 2);
         return RESULT_OK;
     }
 
     if (new_capacity <= l->capacity / 4 && l->capacity >= List::INIT_SIZE) {
-        l->data = realloc(l->data, l->capacity / 2);
+        l->data = (T *) realloc(l->data, l->capacity / 2);
         return RESULT_OK;
     }
     return RESULT_UNDEFINED_ERROR;

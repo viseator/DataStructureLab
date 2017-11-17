@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/viseator/study/DataStructureLab/linearlist.h
+/home/viseator/study/DataStructureLab/datastructure/linearlist.h
 cstdio
 -
 malloc.h
@@ -15,6 +15,6 @@ malloc.h
 /home/viseator/study/DataStructureLab/main.cpp
 iostream
 -
-linearlist.h
-/home/viseator/study/DataStructureLab/linearlist.h
+datastructure/linearlist.h
+/home/viseator/study/DataStructureLab/datastructure/linearlist.h
 
