@@ -85,6 +85,9 @@
 		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linearlist.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
+		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linkedlist.h">
+			<Option target="DataStructureLab"/>
+		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.cpp">
 			<Option target="DataStructureLab"/>
 		</Unit>

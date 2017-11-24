@@ -3,5 +3,5 @@ project(DataStructureLab)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES main.cpp datastructure/linearlist.h)
+set(SOURCE_FILES main.cpp datastructure/linearlist.h datastructure/linkedlist.h)
 add_executable(DataStructureLab ${SOURCE_FILES})
