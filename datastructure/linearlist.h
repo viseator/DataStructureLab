@@ -13,6 +13,10 @@
 #define NULL_PTR_ERROR 0x1
 #define RESULT_UNDEFINED_ERROR 0x2
 
+/**
+ * Linear List Data Structure
+ * @tparam T  the type stores in the list
+ */
 template<class T>
 class LinearList {
 public :
@@ -52,23 +56,41 @@ public :
     static int ListTraverse(List *l, void (*visit)(T));
 };
 
+/**
+ * Init the list, alloc space for the data
+ * @tparam T the type store in the list
+ * @param l the pointer to the pointer of list
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::InitialList(List **l) {
     *l = new List();
-    (**l).data = (T *) calloc(List::INIT_SIZE, sizeof(T));
+    (*l)->data = (T *) calloc(List::INIT_SIZE, sizeof(T));
     return RESULT_OK;
 }
 
+/**
+ * Destroy the list, free the space allocated the data
+ * @tparam T the type store in the list
+ * @param l the pointer to the pointer of list
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::DestroyList(List **l) {
     if ((*l)->data != nullptr) {
-        delete (*l)->data;
+        free((*l)->data);
     }
     delete (*l);
     *l = nullptr;
     return RESULT_OK;
 }
 
+/**
+ * Clear the data stores in the list, reset the state of the list
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::ClearList(List *l) {
     if (l == nullptr) {
@@ -82,30 +104,57 @@ int LinearList<T>::ClearList(List *l) {
     return RESULT_OK;
 }
 
+/**
+ * check whether the list is empty
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @return result code
+ */
 template<class T>
 bool LinearList<T>::ListEmpty(List *l) {
     return l->size == 0;
 }
 
+/**
+ * the length of the list
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @return result code
+ */
 template<class T>
 size_t LinearList<T>::ListLength(List *l) {
     return l->size;
 }
 
+/**
+ *  get the element at the position i, stores in the param e
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param e the reference stores result
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::GetElem(List *l, int i, T &e) {
-    if (i < 1 || i > l->size + 1) {
-        std::cout << "Invalid i" << std::endl;
-        return RESULT_UNDEFINED_ERROR;
-    }
     if (l == nullptr) {
         std::cout << "Null Pointer" << std::endl;
         return NULL_PTR_ERROR;
+    }
+    if (i < 1 || i > l->size + 1) {
+        std::cout << "Invalid i" << std::endl;
+        return RESULT_UNDEFINED_ERROR;
     }
     e = l->data[i];
     return RESULT_OK;
 }
 
+/**
+ * Locate the specific element by compare function
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param e the specific element
+ * @param compare the compare function, return 0 means equal
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::LocateElem(List *l, T e, bool (*compare)(T, T)) {
     if (l == nullptr) {
@@ -120,6 +169,14 @@ int LinearList<T>::LocateElem(List *l, T e, bool (*compare)(T, T)) {
     return 0;
 }
 
+/**
+ * get the prior element of the specific element
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param  cur_e current element
+ * @param pre_e the reference store the previous element of current element
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::PriorElem(List *l, T cur_e, T &pre_e) {
     if (l == nullptr) {
@@ -135,6 +192,14 @@ int LinearList<T>::PriorElem(List *l, T cur_e, T &pre_e) {
     return RESULT_UNDEFINED_ERROR;
 }
 
+/**
+ * get the next element of the specific element
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param  cur_e current element
+ * @param next_e the reference store the next element of current element
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::NextElem(List *l, T cur_e, T &next_e) {
     if (l == nullptr) {
@@ -150,6 +215,14 @@ int LinearList<T>::NextElem(List *l, T cur_e, T &next_e) {
     return RESULT_UNDEFINED_ERROR;
 }
 
+/**
+ * insert element to the specific position in the list
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param i the insertion position
+ * @param e the element
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::ListInsert(List *l, int i, T e) {
     if (l == nullptr) {
@@ -168,6 +241,14 @@ int LinearList<T>::ListInsert(List *l, int i, T e) {
     return RESULT_OK;
 }
 
+/**
+ * delete the specific element at the position
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param i the index of the deleted element
+ * @param e the reference to store the deleted element
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::ListDelete(List *l, size_t i, T &e) {
     if (l == nullptr) {
@@ -185,6 +266,13 @@ int LinearList<T>::ListDelete(List *l, size_t i, T &e) {
     return data;
 }
 
+/**
+ * Traverse the list, apply visit function to each element
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param visit visit function apply to each element
+ * @return  result code
+ */
 template<class T>
 int LinearList<T>::ListTraverse(List *l, void (*visit)(T)) {
     if (l == nullptr) {
@@ -196,6 +284,13 @@ int LinearList<T>::ListTraverse(List *l, void (*visit)(T)) {
     return RESULT_OK;
 }
 
+/**
+ * ensure the capacity of the list, double the space allocated for the data or reduce to half
+ * @tparam T the type store in the list
+ * @param l the pointer to the list
+ * @param new_capacity required new capacity
+ * @return result code
+ */
 template<class T>
 int LinearList<T>::EnsureCapacity(LinearList::List *l, size_t new_capacity) {
     if (new_capacity > l->capacity) {

@@ -69,7 +69,7 @@ int main() {
                 std::cout << "Please Input The Elem" << std::endl;
                 std::cin >> a;
                 std::cout << "The Elem Index Is: "
-                          << LinearList<ElemType>::LocateElem(L, a, [](ElemType a1, ElemType a2) -> bool {
+                          << LinearList<ElemType>::LocateElem(L, a, [](ElemType a1, ElemType a2) {
                               return a1 == a2;
                           }) << std::endl;
                 break;
