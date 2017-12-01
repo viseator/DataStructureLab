@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/DataStructureLab.dir/main.cpp.o CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.cpp.o  -o DataStructureLab 

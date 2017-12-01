@@ -5,85 +5,52 @@
 #ifndef DATASTRUCTURELAB_LINKEDLIST_H
 #define DATASTRUCTURELAB_LINKEDLIST_H
 
-#include <cstddef>
+#include <stdbool.h>
+#include <stdlib.h>
 
-template<class T>
-class LinkedList {
-public :
-    class List {
-    };
+#define RESULT_UNDEFINED_ERROR -1;
+#define RESULT_OK 0x0
+#define NULL_PTR_ERROR 0x1
+#define INDEX_RANGE_ERROR 0x2
+#define TYPE int
 
-    static int InitialList(List **l);
+#define NULL_CHECK if(l == NULL){ return NULL_PTR_ERROR; }
+#define RANGE_CHECK if (i < 1 || i > ListLength(l)) { return INDEX_RANGE_ERROR; }
 
-    static int DestroyList(List **l);
+typedef struct node {
+    TYPE data;
+    struct node *next;
+} Node;
 
-    static int ClearList(List *l);
+typedef struct {
+    Node *head;
+    int size;
+} List;
 
-    static bool ListEmpty(List *l);
 
-    static size_t ListLength(List *l);
+int InitialList(List *l);
 
-    static int GetElem(List *l, int i, T &e);
+int DestroyList(List *l);
 
-    static int LocateElem(List *l, T e, bool (*compare)(T arg1, T arg2));
+int ClearList(List *l);
 
-    static int PriorElem(List *l, T cur_e, T &pre_e);
+bool ListEmpty(List *l);
 
-    static int NextElem(List *l, T cur_e, T &next_e);
+int ListLength(List *l);
 
-    static int ListInsert(List *l, int i, T e);
+int GetElem(List *l, int i, TYPE *e);
 
-    static int ListDelete(List *l, size_t i, T &e);
+int LocateElem(List *l, TYPE e, bool (*compare)(TYPE arg1, TYPE arg2));
 
-    static int ListTraverse(List *l, void (*visit)(T));
-};
+int PriorElem(List *l, TYPE cur_e, TYPE *pre_e);
 
-int LinkedList::InitialList(LinkedList::List **l) {
-    return 0;
-}
+int NextElem(List *l, TYPE cur_e, TYPE *next_e);
 
-int LinkedList::DestroyList(LinkedList::List **l) {
-    return 0;
-}
+int ListInsert(List *l, int i, TYPE e);
 
-int LinkedList::ClearList(LinkedList::List *l) {
-    return 0;
-}
+int ListDelete(List *l, int i, TYPE *e);
 
-bool LinkedList::ListEmpty(LinkedList::List *l) {
-    return false;
-}
+int ListTraverse(List *l, void (*visit)(TYPE));
 
-size_t LinkedList::ListLength(LinkedList::List *l) {
-    return 0;
-}
-
-int LinkedList::GetElem(LinkedList::List *l, int i, T &e) {
-    return 0;
-}
-
-int LinkedList::LocateElem(LinkedList::List *l, T e, bool (*compare)(T, T)) {
-    return 0;
-}
-
-int LinkedList::PriorElem(LinkedList::List *l, T cur_e, T &pre_e) {
-    return 0;
-}
-
-int LinkedList::NextElem(LinkedList::List *l, T cur_e, T &next_e) {
-    return 0;
-}
-
-int LinkedList::ListInsert(LinkedList::List *l, int i, T e) {
-    return 0;
-}
-
-int LinkedList::ListDelete(LinkedList::List *l, size_t i, T &e) {
-    return 0;
-}
-
-int LinkedList::ListTraverse(LinkedList::List *l, void (*visit)(T)) {
-    return 0;
-}
 
 #endif //DATASTRUCTURELAB_LINKEDLIST_H
