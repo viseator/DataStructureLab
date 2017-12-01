@@ -1,3 +1,3 @@
 /home/viseator/study/DataStructureLab/CMakeFiles/rebuild_cache.dir
-/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir
 /home/viseator/study/DataStructureLab/CMakeFiles/edit_cache.dir
+/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir

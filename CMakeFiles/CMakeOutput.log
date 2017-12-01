@@ -1,6 +1,6 @@
 The system is: Linux - 4.13.12-1-ARCH - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: /usr/bin/x86_64-w64-mingw32-cc 
 Build flags: 
 Id flags:  
 
@@ -8,12 +8,12 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.9.6/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.9.4/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /usr/bin/x86_64-w64-mingw32-c++ 
 Build flags: 
 Id flags:  
 
@@ -21,47 +21,47 @@ The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.9.6/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.9.4/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d714b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d714b.dir/build.make CMakeFiles/cmTC_d714b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fe63c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe63c.dir/build.make CMakeFiles/cmTC_fe63c.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d714b.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_d714b.dir/testCCompiler.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_d714b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d714b.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_d714b.dir/testCCompiler.c.o  -o cmTC_d714b 
+Building C object CMakeFiles/cmTC_fe63c.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-cc    -o CMakeFiles/cmTC_fe63c.dir/testCCompiler.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_fe63c
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe63c.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-cc      CMakeFiles/cmTC_fe63c.dir/testCCompiler.c.o  -o cmTC_fe63c 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a8dee/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a8dee.dir/build.make CMakeFiles/cmTC_a8dee.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0b475/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b475.dir/build.make CMakeFiles/cmTC_0b475.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_a8dee
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8dee.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o  -o cmTC_a8dee 
+Building C object CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-cc    -o CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o   -c /home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_0b475
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b475.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-cc     -v CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o  -o cmTC_0b475 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper
+Target: x86_64-w64-mingw32
+Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecdir=/usr/lib --target=x86_64-w64-mingw32 --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-threads=posix --enable-fully-dynamic-string --enable-libstdcxx-time=yes --with-system-zlib --enable-cloog-backend=isl --enable-lto --disable-dw2-exceptions --enable-libgomp --disable-multilib --enable-checking=release
 Thread model: posix
 gcc version 7.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8dee' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2C8ye2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a8dee /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8dee' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b475' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6W3EoI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_0b475 /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b475' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -69,72 +69,83 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a8dee/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a8dee.dir/build.make CMakeFiles/cmTC_a8dee.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0b475/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0b475.dir/build.make CMakeFiles/cmTC_0b475.dir/build]
   ignore line: [make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_a8dee]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8dee.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o  -o cmTC_a8dee ]
+  ignore line: [Building C object CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-cc    -o CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o   -c /home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_0b475]
+  ignore line: [/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b475.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-cc     -v CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o  -o cmTC_0b475 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
+  ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecdir=/usr/lib --target=x86_64-w64-mingw32 --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-threads=posix --enable-fully-dynamic-string --enable-libstdcxx-time=yes --with-system-zlib --enable-cloog-backend=isl --enable-lto --disable-dw2-exceptions --enable-libgomp --disable-multilib --enable-checking=release]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 7.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a8dee' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2C8ye2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a8dee /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2] ==> ignore
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b475' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6W3EoI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_0b475 /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc2C8ye2.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc6W3EoI.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
     arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a8dee] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..]
-    arg [CMakeFiles/cmTC_a8dee.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_0b475] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0]
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib]
+    arg [CMakeFiles/cmTC_0b475.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0;/usr/lib;/lib]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0] ==> [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/usr/x86_64-w64-mingw32/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib] ==> [/usr/x86_64-w64-mingw32/lib]
+  implicit libs: [mingw32;gcc;gcc_eh;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;gcc_eh;moldname;mingwex]
+  implicit dirs: [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0;/usr/x86_64-w64-mingw32/lib]
   implicit fwks: []
 
 
@@ -143,14 +154,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c013f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c013f.dir/build.make CMakeFiles/cmTC_c013f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fc131/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fc131.dir/build.make CMakeFiles/cmTC_fc131.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c013f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c013f.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c013f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c013f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c013f.dir/feature_tests.c.o  -o cmTC_c013f 
+Building C object CMakeFiles/cmTC_fc131.dir/feature_tests.c.o
+/usr/bin/x86_64-w64-mingw32-cc   -std=c11 -o CMakeFiles/cmTC_fc131.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fc131
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc131.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-cc      CMakeFiles/cmTC_fc131.dir/feature_tests.c.o  -o cmTC_fc131 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -163,14 +174,14 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_35ab2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_35ab2.dir/build.make CMakeFiles/cmTC_35ab2.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8e49b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e49b.dir/build.make CMakeFiles/cmTC_8e49b.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35ab2.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_35ab2.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_35ab2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35ab2.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_35ab2.dir/feature_tests.c.o  -o cmTC_35ab2 
+Building C object CMakeFiles/cmTC_8e49b.dir/feature_tests.c.o
+/usr/bin/x86_64-w64-mingw32-cc   -std=c99 -o CMakeFiles/cmTC_8e49b.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8e49b
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e49b.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-cc      CMakeFiles/cmTC_8e49b.dir/feature_tests.c.o  -o cmTC_8e49b 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -183,14 +194,14 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b1c20/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b1c20.dir/build.make CMakeFiles/cmTC_b1c20.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_29c44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29c44.dir/build.make CMakeFiles/cmTC_29c44.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b1c20.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b1c20.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b1c20
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1c20.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_b1c20.dir/feature_tests.c.o  -o cmTC_b1c20 
+Building C object CMakeFiles/cmTC_29c44.dir/feature_tests.c.o
+/usr/bin/x86_64-w64-mingw32-cc   -std=c90 -o CMakeFiles/cmTC_29c44.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
+Linking C executable cmTC_29c44
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29c44.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-cc      CMakeFiles/cmTC_29c44.dir/feature_tests.c.o  -o cmTC_29c44 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -201,40 +212,40 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_573ac/fast"
-/usr/bin/make -f CMakeFiles/cmTC_573ac.dir/build.make CMakeFiles/cmTC_573ac.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c2567/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2567.dir/build.make CMakeFiles/cmTC_c2567.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_573ac.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_573ac.dir/testCXXCompiler.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_573ac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_573ac.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_573ac.dir/testCXXCompiler.cxx.o  -o cmTC_573ac 
+Building CXX object CMakeFiles/cmTC_c2567.dir/testCXXCompiler.cxx.o
+/usr/bin/x86_64-w64-mingw32-c++     -o CMakeFiles/cmTC_c2567.dir/testCXXCompiler.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c2567
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2567.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++       CMakeFiles/cmTC_c2567.dir/testCXXCompiler.cxx.o  -o cmTC_c2567 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_62cc4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_62cc4.dir/build.make CMakeFiles/cmTC_62cc4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_dd21d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd21d.dir/build.make CMakeFiles/cmTC_dd21d.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_62cc4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62cc4.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_62cc4 
+Building CXX object CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/x86_64-w64-mingw32-c++     -o CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o -c /home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_dd21d
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd21d.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++      -v CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_dd21d 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper
+Target: x86_64-w64-mingw32
+Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecdir=/usr/lib --target=x86_64-w64-mingw32 --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-threads=posix --enable-fully-dynamic-string --enable-libstdcxx-time=yes --with-system-zlib --enable-cloog-backend=isl --enable-lto --disable-dw2-exceptions --enable-libgomp --disable-multilib --enable-checking=release
 Thread model: posix
 gcc version 7.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62cc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc4ahwi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_62cc4 /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62cc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dd21d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccneC1t5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_dd21d /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dd21d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -242,70 +253,84 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_62cc4/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_62cc4.dir/build.make CMakeFiles/cmTC_62cc4.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_dd21d/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_dd21d.dir/build.make CMakeFiles/cmTC_dd21d.dir/build]
   ignore line: [make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_62cc4]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62cc4.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_62cc4 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-c++     -o CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o -c /home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_dd21d]
+  ignore line: [/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd21d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-c++      -v CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_dd21d ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
+  ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecdir=/usr/lib --target=x86_64-w64-mingw32 --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-threads=posix --enable-fully-dynamic-string --enable-libstdcxx-time=yes --with-system-zlib --enable-cloog-backend=isl --enable-lto --disable-dw2-exceptions --enable-libgomp --disable-multilib --enable-checking=release]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 7.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62cc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc4ahwi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_62cc4 /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2] ==> ignore
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dd21d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccneC1t5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_dd21d /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccc4ahwi.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccneC1t5.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
     arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_62cc4] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..]
-    arg [CMakeFiles/cmTC_62cc4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_dd21d] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0]
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib]
+    arg [CMakeFiles/cmTC_dd21d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0;/usr/lib;/lib]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0] ==> [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/usr/x86_64-w64-mingw32/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/lib] ==> [/usr/x86_64-w64-mingw32/lib]
+  implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
+  implicit dirs: [/usr/lib/gcc/x86_64-w64-mingw32/7.2.0;/usr/x86_64-w64-mingw32/lib]
   implicit fwks: []
 
 
@@ -314,14 +339,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ed892/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ed892.dir/build.make CMakeFiles/cmTC_ed892.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a19f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a19f0.dir/build.make CMakeFiles/cmTC_a19f0.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ed892.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_ed892.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ed892
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed892.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_ed892.dir/feature_tests.cxx.o  -o cmTC_ed892 
+Building CXX object CMakeFiles/cmTC_a19f0.dir/feature_tests.cxx.o
+/usr/bin/x86_64-w64-mingw32-c++    -std=c++1z -o CMakeFiles/cmTC_a19f0.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a19f0
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a19f0.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++       CMakeFiles/cmTC_a19f0.dir/feature_tests.cxx.o  -o cmTC_a19f0 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -387,14 +412,14 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2374c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2374c.dir/build.make CMakeFiles/cmTC_2374c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c13b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c13b6.dir/build.make CMakeFiles/cmTC_c13b6.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2374c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_2374c.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2374c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2374c.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_2374c.dir/feature_tests.cxx.o  -o cmTC_2374c 
+Building CXX object CMakeFiles/cmTC_c13b6.dir/feature_tests.cxx.o
+/usr/bin/x86_64-w64-mingw32-c++    -std=c++14 -o CMakeFiles/cmTC_c13b6.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c13b6
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c13b6.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++       CMakeFiles/cmTC_c13b6.dir/feature_tests.cxx.o  -o cmTC_c13b6 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -460,14 +485,14 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bbb7a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bbb7a.dir/build.make CMakeFiles/cmTC_bbb7a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3223f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3223f.dir/build.make CMakeFiles/cmTC_3223f.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bbb7a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_bbb7a.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_bbb7a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbb7a.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_bbb7a.dir/feature_tests.cxx.o  -o cmTC_bbb7a 
+Building CXX object CMakeFiles/cmTC_3223f.dir/feature_tests.cxx.o
+/usr/bin/x86_64-w64-mingw32-c++    -std=c++11 -o CMakeFiles/cmTC_3223f.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3223f
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3223f.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++       CMakeFiles/cmTC_3223f.dir/feature_tests.cxx.o  -o cmTC_3223f 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 
@@ -533,617 +558,14 @@ make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMa
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5b638/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5b638.dir/build.make CMakeFiles/cmTC_5b638.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7cf6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7cf6c.dir/build.make CMakeFiles/cmTC_7cf6c.dir/build
 make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5b638.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_5b638.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5b638
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b638.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_5b638.dir/feature_tests.cxx.o  -o cmTC_5b638 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:0cxx_alias_templates
-    Feature record: CXX_FEATURE:0cxx_alignas
-    Feature record: CXX_FEATURE:0cxx_alignof
-    Feature record: CXX_FEATURE:0cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:0cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:0cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:0cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:0cxx_default_function_template_args
-    Feature record: CXX_FEATURE:0cxx_defaulted_functions
-    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:0cxx_delegating_constructors
-    Feature record: CXX_FEATURE:0cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:0cxx_explicit_conversions
-    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:0cxx_extern_templates
-    Feature record: CXX_FEATURE:0cxx_final
-    Feature record: CXX_FEATURE:0cxx_func_identifier
-    Feature record: CXX_FEATURE:0cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:0cxx_inline_namespaces
-    Feature record: CXX_FEATURE:0cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:0cxx_local_type_template_args
-    Feature record: CXX_FEATURE:0cxx_long_long_type
-    Feature record: CXX_FEATURE:0cxx_noexcept
-    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:0cxx_nullptr
-    Feature record: CXX_FEATURE:0cxx_override
-    Feature record: CXX_FEATURE:0cxx_range_for
-    Feature record: CXX_FEATURE:0cxx_raw_string_literals
-    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:0cxx_rvalue_references
-    Feature record: CXX_FEATURE:0cxx_sizeof_member
-    Feature record: CXX_FEATURE:0cxx_static_assert
-    Feature record: CXX_FEATURE:0cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:0cxx_thread_local
-    Feature record: CXX_FEATURE:0cxx_trailing_return_types
-    Feature record: CXX_FEATURE:0cxx_unicode_literals
-    Feature record: CXX_FEATURE:0cxx_uniform_initialization
-    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:0cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:0cxx_variadic_macros
-    Feature record: CXX_FEATURE:0cxx_variadic_templates
-The system is: Linux - 4.13.12-1-ARCH - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.10.0/CompilerIdC/a.out"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-
-The CXX compiler identification is GNU, found in "/home/viseator/study/DataStructureLab/CMakeFiles/3.10.0/CompilerIdCXX/a.out"
-
-Determining if the C compiler works passed with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_06096/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06096.dir/build.make CMakeFiles/cmTC_06096.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_06096.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_06096.dir/testCCompiler.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_06096
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06096.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_06096.dir/testCCompiler.c.o  -o cmTC_06096 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_7b7bc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7b7bc.dir/build.make CMakeFiles/cmTC_7b7bc.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_7b7bc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b7bc.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o  -o cmTC_7b7bc 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
-Thread model: posix
-gcc version 7.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b7bc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9VLByt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7b7bc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b7bc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7b7bc/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7b7bc.dir/build.make CMakeFiles/cmTC_7b7bc.dir/build]
-  ignore line: [make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_7b7bc]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b7bc.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o  -o cmTC_7b7bc ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b7bc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9VLByt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7b7bc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9VLByt.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_7b7bc] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..]
-    arg [CMakeFiles/cmTC_7b7bc.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0;/usr/lib;/lib]
-  implicit fwks: []
-
-
-
-
-Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_e60d5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e60d5.dir/build.make CMakeFiles/cmTC_e60d5.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e60d5.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_e60d5.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e60d5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e60d5.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_e60d5.dir/feature_tests.c.o  -o cmTC_e60d5 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:1c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_4faee/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4faee.dir/build.make CMakeFiles/cmTC_4faee.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4faee.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_4faee.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4faee
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4faee.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_4faee.dir/feature_tests.c.o  -o cmTC_4faee 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_fb9d0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fb9d0.dir/build.make CMakeFiles/cmTC_fb9d0.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fb9d0.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_fb9d0.dir/feature_tests.c.o   -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.c
-Linking C executable cmTC_fb9d0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb9d0.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_fb9d0.dir/feature_tests.c.o  -o cmTC_fb9d0 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:0c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:0c_variadic_macros
-Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_adbfe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_adbfe.dir/build.make CMakeFiles/cmTC_adbfe.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_adbfe.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_adbfe.dir/testCXXCompiler.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_adbfe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adbfe.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_adbfe.dir/testCXXCompiler.cxx.o  -o cmTC_adbfe 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_6efa0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6efa0.dir/build.make CMakeFiles/cmTC_6efa0.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_6efa0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6efa0.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6efa0 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp
-Thread model: posix
-gcc version 7.2.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6efa0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw4Ur8L.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6efa0 /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6efa0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6efa0/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6efa0.dir/build.make CMakeFiles/cmTC_6efa0.dir/build]
-  ignore line: [make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_6efa0]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6efa0.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6efa0 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc-multilib/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.2.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6efa0' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccw4Ur8L.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6efa0 /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccw4Ur8L.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_6efa0] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..]
-    arg [CMakeFiles/cmTC_6efa0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0;/usr/lib;/lib]
-  implicit fwks: []
-
-
-
-
-Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_10f75/fast"
-/usr/bin/make -f CMakeFiles/cmTC_10f75.dir/build.make CMakeFiles/cmTC_10f75.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_10f75.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_10f75.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_10f75
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10f75.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_10f75.dir/feature_tests.cxx.o  -o cmTC_10f75 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_ca132/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ca132.dir/build.make CMakeFiles/cmTC_ca132.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ca132.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_ca132.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ca132
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca132.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_ca132.dir/feature_tests.cxx.o  -o cmTC_ca132 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_636b8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_636b8.dir/build.make CMakeFiles/cmTC_636b8.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_636b8.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_636b8.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_636b8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_636b8.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_636b8.dir/feature_tests.cxx.o  -o cmTC_636b8 
-make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_677a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_677a7.dir/build.make CMakeFiles/cmTC_677a7.dir/build
-make[1]: Entering directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_677a7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_677a7.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_677a7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_677a7.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_677a7.dir/feature_tests.cxx.o  -o cmTC_677a7 
+Building CXX object CMakeFiles/cmTC_7cf6c.dir/feature_tests.cxx.o
+/usr/bin/x86_64-w64-mingw32-c++    -std=c++98 -o CMakeFiles/cmTC_7cf6c.dir/feature_tests.cxx.o -c /home/viseator/study/DataStructureLab/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7cf6c
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cf6c.dir/link.txt --verbose=1
+/usr/bin/x86_64-w64-mingw32-c++       CMakeFiles/cmTC_7cf6c.dir/feature_tests.cxx.o  -o cmTC_7cf6c 
 make[1]: Leaving directory '/home/viseator/study/DataStructureLab/CMakeFiles/CMakeTmp'
 
 

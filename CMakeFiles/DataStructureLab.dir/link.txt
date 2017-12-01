@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/DataStructureLab.dir/menu.cpp.o CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o CMakeFiles/DataStructureLab.dir/main.cpp.o  -o DataStructureLab 
+/usr/bin/x86_64-w64-mingw32-c++  -static -static-libgcc -static-libstdc++ -g   CMakeFiles/DataStructureLab.dir/menu.cpp.o CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o CMakeFiles/DataStructureLab.dir/main.cpp.o  -o DataStructureLab -lgcc_eh -lgcc_eh 
