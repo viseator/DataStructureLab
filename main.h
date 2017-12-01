@@ -6,7 +6,4 @@
 #define DATASTRUCTURELAB_MAIN_H
 
 #include "menu.h"
-int main(){
-    return linear_table_menu();
-}
 #endif //DATASTRUCTURELAB_MAIN_H

@@ -9,5 +9,6 @@ CMakeFiles/DataStructureLab.dir/main.cpp.o: ../main.h
 CMakeFiles/DataStructureLab.dir/main.cpp.o: ../menu.h
 
 CMakeFiles/DataStructureLab.dir/menu.cpp.o: ../datastructure/linearlist.h
+CMakeFiles/DataStructureLab.dir/menu.cpp.o: ../datastructure/linkedlist.h
 CMakeFiles/DataStructureLab.dir/menu.cpp.o: ../menu.cpp
 

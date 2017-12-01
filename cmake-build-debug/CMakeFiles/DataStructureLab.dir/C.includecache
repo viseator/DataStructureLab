@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/viseator/study/DataStructureLab/datastructure/linkedlist.c
+stdio.h
+-
 linkedlist.h
 /home/viseator/study/DataStructureLab/datastructure/linkedlist.h
 

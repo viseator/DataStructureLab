@@ -14,8 +14,8 @@
 #define INDEX_RANGE_ERROR 0x2
 #define TYPE int
 
-#define NULL_CHECK if(l == NULL){ return NULL_PTR_ERROR; }
-#define RANGE_CHECK if (i < 1 || i > ListLength(l)) { return INDEX_RANGE_ERROR; }
+#define NULL_CHECK if(l == NULL){ printf("NULL_PTR_ERROR"); return NULL_PTR_ERROR; }
+#define RANGE_CHECK if (i < 1 || i > ListLength(l)) { printf("INDEX_RANGE_ERROR");return INDEX_RANGE_ERROR; }
 
 typedef struct node {
     TYPE data;
@@ -23,12 +23,12 @@ typedef struct node {
 } Node;
 
 typedef struct {
-    Node *head;
+    Node head;
     int size;
 } List;
 
 
-int InitialList(List *l);
+int InitialList(List **l);
 
 int DestroyList(List *l);
 

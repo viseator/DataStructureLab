@@ -2,12 +2,12 @@
 // Created by viseator on 11/24/17.
 //
 
+#include <stdio.h>
 #include "linkedlist.h"
 
-int InitialList(List *l) {
-    l = (List *) calloc(1, sizeof(List));
-    l->size = 0;
-    l->head = NULL;
+int InitialList(List **l) {
+    *l = (List *) calloc(1, sizeof(List));
+    (*l)->size = 0;
     return RESULT_OK;
 }
 
@@ -20,7 +20,7 @@ int DestroyList(List *l) {
 
 int ClearList(List *l) {
     NULL_CHECK
-    Node *p = l->head;
+    Node *p = l->head.next;
     Node *n = NULL;
     while (p != NULL) {
         n = p->next;
@@ -44,17 +44,17 @@ int ListLength(List *l) {
 int GetElem(List *l, int i, TYPE *e) {
     NULL_CHECK
     RANGE_CHECK
-    Node *p = l->head;
+    Node *p = l->head.next;
     while (--i) {
         p = p->next;
     }
-    e = &p->data;
+    *e = p->data;
     return RESULT_OK;
 }
 
 int LocateElem(List *l, TYPE e, bool (*compare)(TYPE arg1, TYPE arg2)) {
     NULL_CHECK
-    Node *p = l->head;
+    Node *p = l->head.next;
     int i = 0;
     while (p != NULL) {
         ++i;
@@ -71,11 +71,11 @@ int PriorElem(List *l, TYPE cur_e, TYPE *pre_e) {
     if (ListLength(l) < 2) {
         return RESULT_UNDEFINED_ERROR;
     }
-    Node *p = l->head;
+    Node *p = l->head.next;
     Node *n = p->next;
     while (n != NULL) {
         if (cur_e == n->data) {
-            pre_e = &p->data;
+            *pre_e = p->data;
             return RESULT_OK;
         }
         p = n;
@@ -89,13 +89,13 @@ int NextElem(List *l, TYPE cur_e, TYPE *next_e) {
     if (ListLength(l) < 2) {
         return RESULT_UNDEFINED_ERROR;
     }
-    Node *p = l->head;
+    Node *p = l->head.next;
     while (p != NULL) {
         if (p->data == cur_e) {
             if (p->next == NULL) {
                 return RESULT_UNDEFINED_ERROR;
             }
-            next_e = &p->next->data;
+            *next_e = p->next->data;
             return RESULT_OK;
         }
         p = p->next;
@@ -106,14 +106,14 @@ int NextElem(List *l, TYPE cur_e, TYPE *next_e) {
 int ListInsert(List *l, int i, TYPE e) {
     NULL_CHECK
     if (i < 1 || i > ListLength(l) + 1) { return INDEX_RANGE_ERROR; }
-    Node *p = l->head;
+    Node *p = &l->head;
     while (--i) {
         p = p->next;
     }
     Node *n = (Node *) calloc(1, sizeof(Node));
     n->data = e;
     n->next = p->next;
-    p = n;
+    p->next = n;
     ++l->size;
     return RESULT_OK;
 }
@@ -121,17 +121,8 @@ int ListInsert(List *l, int i, TYPE e) {
 int ListDelete(List *l, int i, TYPE *e) {
     NULL_CHECK
     RANGE_CHECK
-    Node *p = l->head;
+    Node *p = &l->head;
     Node *n = NULL;
-    if (i == 1) {
-        n = p->next;
-        *e = p->data;
-        free(p);
-        l->head = n;
-        --l->size;
-        return RESULT_OK;
-    }
-    --i;
     while (--i) {
         p = p->next;
     }
@@ -145,9 +136,10 @@ int ListDelete(List *l, int i, TYPE *e) {
 
 int ListTraverse(List *l, void (*visit)(TYPE)) {
     NULL_CHECK
-    Node *p = l->head;
+    Node *p = l->head.next;
     while (p != NULL) {
         visit(p->data);
+        p = p->next;
     }
     return RESULT_OK;
 }
