@@ -124,14 +124,14 @@ int linked_list_menu() {
     int op = 1;
     while (op) {
         printf("\n\n");
-        printf("      Menu for Linear Table On Sequence Structure \n");
+        printf("      Menu for Linear Table On LinkedList Structure \n");
         printf("-------------------------------------------------\n");
         printf("    	  1. InitialList       7. LocateElem\n");
-        printf("    	  2. DestroyList     8. PriorElem\n");
-        printf("    	  3. ClearList       9. NextElem \n");
-        printf("    	  4. ListEmpty     10. ListInsert\n");
-        printf("    	  5. ListLength     11. ListDelete\n");
-        printf("    	  6. GetElem       12. ListTraverse\n");
+        printf("    	  2. DestroyList       8. PriorElem\n");
+        printf("    	  3. ClearList         9. NextElem \n");
+        printf("    	  4. ListEmpty         10. ListInsert\n");
+        printf("    	  5. ListLength        11. ListDelete\n");
+        printf("    	  6. GetElem           12. ListTraverse\n");
         printf("    	  0. Exit\n");
         printf("-------------------------------------------------\n");
         printf("    Please choose your operation[0~12]:");
@@ -148,7 +148,7 @@ int linked_list_menu() {
                 }
                 break;
             case 2:
-                if (DestroyList(L) == RESULT_OK) {
+                if (DestroyList(&L) == RESULT_OK) {
                     printf("LinearList Destroyed Successfully.\n");
                 } else {
                     printf("LinearList Destroy Failed.\n");
@@ -197,7 +197,7 @@ int linked_list_menu() {
             case 9:
                 std::cout << "Please Input The Elem" << std::endl;
                 std::cin >> a;
-                if (PriorElem(L, a, &b) == RESULT_OK) {
+                if (NextElem(L, a, &b) == RESULT_OK) {
                     NextElem(L, a, &b);
                 }
                 std::cout << "The Next Elem Is: " << b << std::endl;

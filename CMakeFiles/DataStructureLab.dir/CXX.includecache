@@ -12,21 +12,27 @@ cstdio
 malloc.h
 -
 
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.cpp
-iostream
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
+stdbool.h
 -
-linkedlist.h
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-cstddef
+stdlib.h
 -
 
 /home/viseator/study/DataStructureLab/main.cpp
+main.h
+/home/viseator/study/DataStructureLab/main.h
+
+/home/viseator/study/DataStructureLab/main.h
+menu.h
+/home/viseator/study/DataStructureLab/menu.h
+
+/home/viseator/study/DataStructureLab/menu.cpp
 iostream
 -
 datastructure/linearlist.h
 /home/viseator/study/DataStructureLab/datastructure/linearlist.h
 datastructure/linkedlist.h
 /home/viseator/study/DataStructureLab/datastructure/linkedlist.h
+
+/home/viseator/study/DataStructureLab/menu.h
 

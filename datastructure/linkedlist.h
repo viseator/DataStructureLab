@@ -30,7 +30,7 @@ typedef struct {
 
 int InitialList(List **l);
 
-int DestroyList(List *l);
+int DestroyList(List **l);
 
 int ClearList(List *l);
 

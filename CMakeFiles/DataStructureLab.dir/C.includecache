@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.c
+stdio.h
+-
+linkedlist.h
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
+
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
+stdbool.h
+-
+stdlib.h
+-
+

@@ -11,10 +11,11 @@ int InitialList(List **l) {
     return RESULT_OK;
 }
 
-int DestroyList(List *l) {
+int DestroyList(List **l) {
     NULL_CHECK
-    ClearList(l);
-    free(l);
+    ClearList(*l);
+    free(*l);
+    *l = NULL;
     return RESULT_OK;
 }
 
@@ -27,6 +28,7 @@ int ClearList(List *l) {
         free(p);
         p = n;
     }
+    l->head.next = NULL;
     l->size = 0;
     return RESULT_OK;
 }
