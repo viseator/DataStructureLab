@@ -123,6 +123,33 @@ DataStructureLab/fast:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/build
 .PHONY : DataStructureLab/fast
 
+datastructure/BinaryTree.o: datastructure/BinaryTree.c.o
+
+.PHONY : datastructure/BinaryTree.o
+
+# target to build an object file
+datastructure/BinaryTree.c.o:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o
+.PHONY : datastructure/BinaryTree.c.o
+
+datastructure/BinaryTree.i: datastructure/BinaryTree.c.i
+
+.PHONY : datastructure/BinaryTree.i
+
+# target to preprocess a source file
+datastructure/BinaryTree.c.i:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.i
+.PHONY : datastructure/BinaryTree.c.i
+
+datastructure/BinaryTree.s: datastructure/BinaryTree.c.s
+
+.PHONY : datastructure/BinaryTree.s
+
+# target to generate assembly for a file
+datastructure/BinaryTree.c.s:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.s
+.PHONY : datastructure/BinaryTree.c.s
+
 datastructure/linkedlist.o: datastructure/linkedlist.c.o
 
 .PHONY : datastructure/linkedlist.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataStructureLab"
+	@echo "... datastructure/BinaryTree.o"
+	@echo "... datastructure/BinaryTree.i"
+	@echo "... datastructure/BinaryTree.s"
 	@echo "... datastructure/linkedlist.o"
 	@echo "... datastructure/linkedlist.i"
 	@echo "... datastructure/linkedlist.s"

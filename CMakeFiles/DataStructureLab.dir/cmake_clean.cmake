@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructureLab.dir/menu.cpp.o"
   "CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o"
   "CMakeFiles/DataStructureLab.dir/main.cpp.o"
+  "CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o"
   "DataStructureLab.pdb"
   "DataStructureLab"
 )

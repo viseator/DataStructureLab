@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/viseator/study/DataStructureLab/datastructure/BinaryTree.c" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o"
   "/home/viseator/study/DataStructureLab/datastructure/linkedlist.c" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
