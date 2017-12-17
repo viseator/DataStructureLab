@@ -3,17 +3,33 @@
 //
 
 #include "BinaryTree.h"
-#include "../../../../../usr/x86_64-w64-mingw32/include/stdio.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+Node *CreateNode(char *s);
+
+int CREATE_TREE_INDEX = 0;
 
 int InitBiTree(BinaryTree **t) {
-    return 0;
+    *t = (BinaryTree *) calloc(sizeof(ElemType), 1);
+    (*t)->root = NULL;
+    return RESULT_OK;
 }
 
 int DestroyBitTree(BinaryTree **t) {
-    return 0;
+    if (*t == NULL) {
+        return NULL_PTR_ERROR;
+    }
+    ClearBitTree(*t);
+    free(*t);
+    *t = NULL;
+    return RESULT_OK;
 }
 
 int CreateBiTree(BinaryTree *t, char *def) {
+    CREATE_TREE_INDEX = 0;
+    t->root = CreateNode(def);
     return 0;
 }
 
@@ -83,4 +99,27 @@ int PostOrderTraverse(BinaryTree *t, void (*Visit)(Node *)) {
 
 int LevelOrderTraverse(BinaryTree *t, void (*Visit)(Node *)) {
     return 0;
+}
+
+Node *CreateNode(char *s) {
+    if (s[CREATE_TREE_INDEX] == '\0') {
+        return NULL;
+    }
+
+    if (s[CREATE_TREE_INDEX] == ' ') {
+        CREATE_TREE_INDEX += 2;
+        return NULL;
+    }
+    Node *n = (Node *) calloc(sizeof(Node), 1);
+    char temp[32];
+    int i = 0;
+    while (s[CREATE_TREE_INDEX] != ' ') {
+        temp[i++] = s[CREATE_TREE_INDEX++];
+    }
+    ++CREATE_TREE_INDEX;
+    temp[i] = '\0';
+    n->data = atoi(temp);
+    n->l_child = CreateNode(s);
+    n->r_child = CreateNode(s);
+    return n;
 }

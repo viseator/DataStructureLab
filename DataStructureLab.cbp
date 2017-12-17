@@ -88,28 +88,16 @@
 		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linearlist.h">
-			<Option target="DataStructureLab"/>
-		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linkedlist.c">
-			<Option target="DataStructureLab"/>
-		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linkedlist.h">
-			<Option target="DataStructureLab"/>
-		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/linkedlist_.h">
-			<Option target="DataStructureLab"/>
-		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.cpp">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/menu.cpp">
+		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.c">
 			<Option target="DataStructureLab"/>
 		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/menu.h">
+		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/CMakeLists.txt">

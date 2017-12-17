@@ -150,33 +150,6 @@ datastructure/BinaryTree.c.s:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.s
 .PHONY : datastructure/BinaryTree.c.s
 
-datastructure/linkedlist.o: datastructure/linkedlist.c.o
-
-.PHONY : datastructure/linkedlist.o
-
-# target to build an object file
-datastructure/linkedlist.c.o:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o
-.PHONY : datastructure/linkedlist.c.o
-
-datastructure/linkedlist.i: datastructure/linkedlist.c.i
-
-.PHONY : datastructure/linkedlist.i
-
-# target to preprocess a source file
-datastructure/linkedlist.c.i:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.i
-.PHONY : datastructure/linkedlist.c.i
-
-datastructure/linkedlist.s: datastructure/linkedlist.c.s
-
-.PHONY : datastructure/linkedlist.s
-
-# target to generate assembly for a file
-datastructure/linkedlist.c.s:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.s
-.PHONY : datastructure/linkedlist.c.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -204,32 +177,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-menu.o: menu.cpp.o
+tri_tree_menu.o: tri_tree_menu.c.o
 
-.PHONY : menu.o
+.PHONY : tri_tree_menu.o
 
 # target to build an object file
-menu.cpp.o:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/menu.cpp.o
-.PHONY : menu.cpp.o
+tri_tree_menu.c.o:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o
+.PHONY : tri_tree_menu.c.o
 
-menu.i: menu.cpp.i
+tri_tree_menu.i: tri_tree_menu.c.i
 
-.PHONY : menu.i
+.PHONY : tri_tree_menu.i
 
 # target to preprocess a source file
-menu.cpp.i:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/menu.cpp.i
-.PHONY : menu.cpp.i
+tri_tree_menu.c.i:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.i
+.PHONY : tri_tree_menu.c.i
 
-menu.s: menu.cpp.s
+tri_tree_menu.s: tri_tree_menu.c.s
 
-.PHONY : menu.s
+.PHONY : tri_tree_menu.s
 
 # target to generate assembly for a file
-menu.cpp.s:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/menu.cpp.s
-.PHONY : menu.cpp.s
+tri_tree_menu.c.s:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.s
+.PHONY : tri_tree_menu.c.s
 
 # Help Target
 help:
@@ -243,15 +216,12 @@ help:
 	@echo "... datastructure/BinaryTree.o"
 	@echo "... datastructure/BinaryTree.i"
 	@echo "... datastructure/BinaryTree.s"
-	@echo "... datastructure/linkedlist.o"
-	@echo "... datastructure/linkedlist.i"
-	@echo "... datastructure/linkedlist.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
+	@echo "... tri_tree_menu.o"
+	@echo "... tri_tree_menu.i"
+	@echo "... tri_tree_menu.s"
 .PHONY : help
 
 

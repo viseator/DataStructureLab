@@ -3,9 +3,9 @@
 
 extern "C" {
 #include "datastructure/linkedlist.h"
+#include "datastructure/BinaryTree.h"
 }
 
-typedef int ElemType;
 typedef LinearList<ElemType>::List *LIST;
 
 void print_list(LIST l);
@@ -228,6 +228,7 @@ int linked_list_menu() {
     printf("欢迎下次再使用本系统！\n");
     return 0;
 }//end of main()
+
 
 void print_list(LIST l) {
     printf("The List Content now:\n");

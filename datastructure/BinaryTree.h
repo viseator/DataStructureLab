@@ -20,7 +20,6 @@ typedef struct NODE {
 } Node;
 
 typedef struct BINARY_TREE {
-    int size;
     Node *root;
 } BinaryTree;
 

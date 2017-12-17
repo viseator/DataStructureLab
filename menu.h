@@ -6,6 +6,8 @@
 #define DATASTRUCTURELAB_MENU_H
 
 int linear_table_menu();
+
 int linked_list_menu();
+
 
 #endif //DATASTRUCTURELAB_MENU_H

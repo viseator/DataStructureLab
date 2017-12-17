@@ -6,15 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.c
+/home/viseator/study/DataStructureLab/datastructure/BinaryTree.c
+BinaryTree.h
+/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
 stdio.h
--
-linkedlist.h
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-stdbool.h
 -
 stdlib.h
 -
+string.h
+-
+
+/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
+stdbool.h
+-
+
+/home/viseator/study/DataStructureLab/tri_tree_menu.c
+tri_tree_menu.h
+/home/viseator/study/DataStructureLab/tri_tree_menu.h
+datastructure/BinaryTree.h
+/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
+
+/home/viseator/study/DataStructureLab/tri_tree_menu.h
 

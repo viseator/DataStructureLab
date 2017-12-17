@@ -6,33 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/viseator/study/DataStructureLab/datastructure/linearlist.h
-cstdio
--
-malloc.h
--
-
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-stdbool.h
--
-stdlib.h
--
-
 /home/viseator/study/DataStructureLab/main.cpp
 main.h
 /home/viseator/study/DataStructureLab/main.h
+tri_tree_menu.h
+/home/viseator/study/DataStructureLab/tri_tree_menu.h
 
 /home/viseator/study/DataStructureLab/main.h
-menu.h
-/home/viseator/study/DataStructureLab/menu.h
 
-/home/viseator/study/DataStructureLab/menu.cpp
-iostream
--
-datastructure/linearlist.h
-/home/viseator/study/DataStructureLab/datastructure/linearlist.h
-datastructure/linkedlist.h
-/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-
-/home/viseator/study/DataStructureLab/menu.h
+/home/viseator/study/DataStructureLab/tri_tree_menu.h
 

@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/viseator/study/DataStructureLab/datastructure/BinaryTree.c" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o"
-  "/home/viseator/study/DataStructureLab/datastructure/linkedlist.c" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/datastructure/linkedlist.c.o"
+  "/home/viseator/study/DataStructureLab/tri_tree_menu.c" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/viseator/study/DataStructureLab/main.cpp" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/main.cpp.o"
-  "/home/viseator/study/DataStructureLab/menu.cpp" "/home/viseator/study/DataStructureLab/CMakeFiles/DataStructureLab.dir/menu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
