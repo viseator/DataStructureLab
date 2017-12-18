@@ -9,15 +9,28 @@
 
 Node *CreateNode(char *s);
 
+void FreeNode(Node **n);
+
+int PostOrderDeleteNode(Node **n);
+
 int CREATE_TREE_INDEX = 0;
+int SIZE_COUNT = 0;
+
 
 int InitBiTree(BinaryTree **t) {
+    if (t == NULL) {
+        return NULL_PTR_ERROR;
+    }
     *t = (BinaryTree *) calloc(sizeof(ElemType), 1);
     (*t)->root = NULL;
+    (*t)->size = 0;
     return RESULT_OK;
 }
 
 int DestroyBitTree(BinaryTree **t) {
+    if (t == NULL) {
+        return NULL_PTR_ERROR;
+    }
     if (*t == NULL) {
         return NULL_PTR_ERROR;
     }
@@ -28,17 +41,26 @@ int DestroyBitTree(BinaryTree **t) {
 }
 
 int CreateBiTree(BinaryTree *t, char *def) {
+    NULL_CHECK
+    if (def == NULL) {
+        return NULL_PTR_ERROR;
+    }
     CREATE_TREE_INDEX = 0;
+    SIZE_COUNT = 0;
     t->root = CreateNode(def);
-    return 0;
+    t->size = SIZE_COUNT;
+    return RESULT_OK;
 }
 
 int ClearBitTree(BinaryTree *t) {
-    return 0;
+    NULL_CHECK
+    PostOrderDeleteNode(&t->root);
+    t->size = 0;
+    return RESULT_OK;
 }
 
 bool BiTreeEmpty(BinaryTree *t) {
-    return 0;
+    return t->size == 0;
 }
 
 int BiTreeDepth(BinaryTree *t) {
@@ -94,12 +116,33 @@ int InOrderTraverse(BinaryTree *t, void (*Visit)(Node *)) {
 }
 
 int PostOrderTraverse(BinaryTree *t, void (*Visit)(Node *)) {
-    return 0;
+    NULL_CHECK
+    PostOrderTraverseNode(t->root, Visit);
+    return RESULT_OK;
 }
 
 int LevelOrderTraverse(BinaryTree *t, void (*Visit)(Node *)) {
     return 0;
 }
+
+int PreOrderTraverseNode(Node *n, void (*Visit)(Node *)) {
+    return 0;
+}
+
+int InOrderTraverseNode(Node *n, void (*Visit)(Node *)) {
+    return 0;
+}
+
+int PostOrderTraverseNode(Node *n, void (*Visit)(Node *)) {
+    if (n == NULL) {
+        return RESULT_OK;
+    }
+    PostOrderTraverseNode(n->l_child, Visit);
+    PostOrderTraverseNode(n->r_child, Visit);
+    Visit(n);
+    return RESULT_OK;
+}
+
 
 Node *CreateNode(char *s) {
     if (s[CREATE_TREE_INDEX] == '\0') {
@@ -119,7 +162,23 @@ Node *CreateNode(char *s) {
     ++CREATE_TREE_INDEX;
     temp[i] = '\0';
     n->data = atoi(temp);
+    ++SIZE_COUNT;
     n->l_child = CreateNode(s);
     n->r_child = CreateNode(s);
     return n;
+}
+
+int PostOrderDeleteNode(Node **n) {
+    if (*n == NULL) {
+        return RESULT_OK;
+    }
+    PostOrderDeleteNode(&(*n)->l_child);
+    PostOrderDeleteNode(&(*n)->r_child);
+    FreeNode(n);
+    return RESULT_OK;
+}
+
+void FreeNode(Node **n) {
+    free(*n);
+    *n = NULL;
 }

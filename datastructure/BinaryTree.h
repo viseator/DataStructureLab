@@ -12,6 +12,8 @@
 #define NULL_PTR_ERROR 0x1
 #define RESULT_UNDEFINED_ERROR 0x2
 
+#define NULL_CHECK if (t == NULL) { return NULL_PTR_ERROR; }
+
 
 typedef struct NODE {
     ElemType data;
@@ -21,6 +23,7 @@ typedef struct NODE {
 
 typedef struct BINARY_TREE {
     Node *root;
+    int size;
 } BinaryTree;
 
 int InitBiTree(BinaryTree **t);
@@ -62,5 +65,13 @@ int InOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
 int PostOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
 
 int LevelOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
+
+int PreOrderTraverseNode(Node *n, void (Visit)(Node *n));
+
+int InOrderTraverseNode(Node *n, void (Visit)(Node *n));
+
+int PostOrderTraverseNode(Node *n, void (Visit)(Node *n));
+
+int LevelOrderTraverseNode(Node *n, void (Visit)(Node *n));
 
 #endif; //DATASTRUCTURELAB_BINARYTREE_H
