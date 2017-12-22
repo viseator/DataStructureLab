@@ -94,7 +94,7 @@
 		<Unit filename="/home/viseator/study/DataStructureLab/main.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.c">
+		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.cpp">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.h">

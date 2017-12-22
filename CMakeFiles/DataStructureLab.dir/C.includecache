@@ -28,13 +28,3 @@ stdbool.h
 stdlib.h
 -
 
-/home/viseator/study/DataStructureLab/tri_tree_menu.c
-stdio.h
--
-tri_tree_menu.h
-/home/viseator/study/DataStructureLab/tri_tree_menu.h
-datastructure/BinaryTree.h
-/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
-
-/home/viseator/study/DataStructureLab/tri_tree_menu.h
-

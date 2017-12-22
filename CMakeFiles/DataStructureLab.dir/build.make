@@ -105,42 +105,42 @@ CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o.provides: CMakeFile
 CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o.provides.build: CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o
 
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o: CMakeFiles/DataStructureLab.dir/flags.make
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o: tri_tree_menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viseator/study/DataStructureLab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o   -c /home/viseator/study/DataStructureLab/tri_tree_menu.c
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o: CMakeFiles/DataStructureLab.dir/flags.make
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o: tri_tree_menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viseator/study/DataStructureLab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o -c /home/viseator/study/DataStructureLab/tri_tree_menu.cpp
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/viseator/study/DataStructureLab/tri_tree_menu.c > CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.i
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viseator/study/DataStructureLab/tri_tree_menu.cpp > CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.i
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/viseator/study/DataStructureLab/tri_tree_menu.c -o CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.s
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viseator/study/DataStructureLab/tri_tree_menu.cpp -o CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.s
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.requires:
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.requires:
 
-.PHONY : CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.requires
+.PHONY : CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.requires
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.provides: CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.requires
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.provides.build
-.PHONY : CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.provides
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.provides: CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.provides.build
+.PHONY : CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.provides
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.provides.build: CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.provides.build: CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o
 
 
 # Object files for target DataStructureLab
 DataStructureLab_OBJECTS = \
 "CMakeFiles/DataStructureLab.dir/main.cpp.o" \
 "CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o" \
-"CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o"
+"CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o"
 
 # External object files for target DataStructureLab
 DataStructureLab_EXTERNAL_OBJECTS =
 
 DataStructureLab: CMakeFiles/DataStructureLab.dir/main.cpp.o
 DataStructureLab: CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o
-DataStructureLab: CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o
+DataStructureLab: CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o
 DataStructureLab: CMakeFiles/DataStructureLab.dir/build.make
 DataStructureLab: CMakeFiles/DataStructureLab.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viseator/study/DataStructureLab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DataStructureLab"
@@ -153,7 +153,7 @@ CMakeFiles/DataStructureLab.dir/build: DataStructureLab
 
 CMakeFiles/DataStructureLab.dir/requires: CMakeFiles/DataStructureLab.dir/main.cpp.o.requires
 CMakeFiles/DataStructureLab.dir/requires: CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o.requires
-CMakeFiles/DataStructureLab.dir/requires: CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o.requires
+CMakeFiles/DataStructureLab.dir/requires: CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o.requires
 
 .PHONY : CMakeFiles/DataStructureLab.dir/requires
 

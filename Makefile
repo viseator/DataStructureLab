@@ -177,32 +177,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tri_tree_menu.o: tri_tree_menu.c.o
+tri_tree_menu.o: tri_tree_menu.cpp.o
 
 .PHONY : tri_tree_menu.o
 
 # target to build an object file
-tri_tree_menu.c.o:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o
-.PHONY : tri_tree_menu.c.o
+tri_tree_menu.cpp.o:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o
+.PHONY : tri_tree_menu.cpp.o
 
-tri_tree_menu.i: tri_tree_menu.c.i
+tri_tree_menu.i: tri_tree_menu.cpp.i
 
 .PHONY : tri_tree_menu.i
 
 # target to preprocess a source file
-tri_tree_menu.c.i:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.i
-.PHONY : tri_tree_menu.c.i
+tri_tree_menu.cpp.i:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.i
+.PHONY : tri_tree_menu.cpp.i
 
-tri_tree_menu.s: tri_tree_menu.c.s
+tri_tree_menu.s: tri_tree_menu.cpp.s
 
 .PHONY : tri_tree_menu.s
 
 # target to generate assembly for a file
-tri_tree_menu.c.s:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.s
-.PHONY : tri_tree_menu.c.s
+tri_tree_menu.cpp.s:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.s
+.PHONY : tri_tree_menu.cpp.s
 
 # Help Target
 help:

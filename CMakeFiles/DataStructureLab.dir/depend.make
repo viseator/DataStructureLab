@@ -5,11 +5,11 @@ CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o: datastructure/Bina
 CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o: datastructure/BinaryTree.h
 CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o: datastructure/linkedlist.h
 
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o: datastructure/BinaryTree.h
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o: tri_tree_menu.c
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o: tri_tree_menu.h
-
 CMakeFiles/DataStructureLab.dir/main.cpp.o: main.cpp
 CMakeFiles/DataStructureLab.dir/main.cpp.o: main.h
 CMakeFiles/DataStructureLab.dir/main.cpp.o: tri_tree_menu.h
+
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o: datastructure/BinaryTree.h
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o: tri_tree_menu.cpp
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o: tri_tree_menu.h
 

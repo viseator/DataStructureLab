@@ -47,7 +47,7 @@ int BiTreeDepth(BinaryTree *t);
 
 Tree_Node *Root(BinaryTree *t);
 
-ElemType Value(BinaryTree *t, Tree_Node *e);
+Tree_Node *Value(BinaryTree *t, int i);
 
 int Assign(BinaryTree *t, Tree_Node *e, ElemType value);
 

@@ -5,11 +5,11 @@ CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o
  /home/viseator/study/DataStructureLab/datastructure/BinaryTree.c
  /home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
  /home/viseator/study/DataStructureLab/datastructure/linkedlist.h
-CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o
- /home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
- /home/viseator/study/DataStructureLab/tri_tree_menu.c
- /home/viseator/study/DataStructureLab/tri_tree_menu.h
 CMakeFiles/DataStructureLab.dir/main.cpp.o
  /home/viseator/study/DataStructureLab/main.cpp
  /home/viseator/study/DataStructureLab/main.h
+ /home/viseator/study/DataStructureLab/tri_tree_menu.h
+CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o
+ /home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
+ /home/viseator/study/DataStructureLab/tri_tree_menu.cpp
  /home/viseator/study/DataStructureLab/tri_tree_menu.h

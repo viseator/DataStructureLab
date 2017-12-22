@@ -32,6 +32,7 @@ int InOrderTraverseNode(Tree_Node *n, void (*Visit)(Tree_Node *));
 
 int CREATE_TREE_INDEX = 0;
 int SIZE_COUNT = 0;
+int VALUE_COUNT = 0;
 
 int InitBiTree(BinaryTree **t) {
     if (t == NULL) {
@@ -91,10 +92,22 @@ Tree_Node *Root(BinaryTree *t) {
     return t->root;
 }
 
-ElemType Value(BinaryTree *t, Tree_Node *e) {
+Tree_Node *Value(BinaryTree *t, int i) {
     TREE_NULL_CHECK
-    CONTAIN_CHECK
-    return e->data;
+    VALUE_COUNT = 0;
+    L_NODE head;
+    head.next = NULL;
+    PushBack(&head, t->root);
+    Tree_Node *c_node;
+    while ((c_node = PopFront(&head))) {
+        ++VALUE_COUNT;
+        if (VALUE_COUNT == i) {
+            return c_node;
+        }
+        PushBack(&head, c_node->l_child);
+        PushBack(&head, c_node->r_child);
+    }
+    return NULL;
 }
 
 int Assign(BinaryTree *t, Tree_Node *e, ElemType value) {
