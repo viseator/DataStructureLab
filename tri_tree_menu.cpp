@@ -74,6 +74,7 @@ int tri_tree_menu() {
                 } else {
                     printf("BiTree Cleared Failed.\n");
                 }
+                break;
             case 5:
                 if (BiTreeEmpty(T)) {
                     printf("BiTree Is Empty.\n");
@@ -87,7 +88,7 @@ int tri_tree_menu() {
                 if (depth <= 0) {
                     printf("Error!\n");
                 } else {
-                    printf("List Length Is %d.\n", depth);
+                    printf("Tree Depth Is %d.\n", depth);
                 }
             }
                 break;
@@ -129,6 +130,12 @@ int tri_tree_menu() {
                 Tree_Node *e = Value(T, i);
                 if (e == NULL) {
                     cout << "Index Out of Range Error" << endl;
+                }
+                Tree_Node *p = Parent(T, e);
+                if (p == NULL) {
+                    cout << "No parent" << endl;
+                } else {
+                    cout << "The parent value is:" << p->data << endl;
                 }
             }
                 break;
@@ -212,6 +219,7 @@ int tri_tree_menu() {
                     cout << "Insert Error" << endl;
                 }
             }
+                break;
             case 16: {
                 int lr;
                 cout << "Please input the index:" << endl;
@@ -254,22 +262,6 @@ int tri_tree_menu() {
     }//end of while
     printf("欢迎下次再使用本系统！\n");
     return 0;
-//    PreOrderTraverse(T, &visit);
-//    PostOrderTraverse(T, &visit);
-//    Tree_Node *node = T->root->r_child;
-//    printf("%d", Value(T, node));
-//    L_NODE head;
-//    head.next = NULL;
-//    Tree_Node node1, node2;
-//    node1.data = 1;
-//    node2.data = 2;
-//    PushBack(&head, &node1);
-//    PushBack(&head, &node2);
-//    Tree_Node *node1_p, *node2_p, *node3_p;
-//    node1_p = PopFront(&head);
-//    node2_p = PopFront(&head);
-//    node3_p = PopFront(&head);
-
 }
 
 void visit(Tree_Node *n) {
