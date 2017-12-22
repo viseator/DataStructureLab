@@ -6,7 +6,7 @@
 #include "tri_tree_menu.h"
 #include "datastructure/BinaryTree.h"
 
-void visit(Node *n);
+void visit(Tree_Node *n);
 
 int tri_tree_menu() {
     BinaryTree *T;
@@ -14,10 +14,23 @@ int tri_tree_menu() {
     InitBiTree(&T);
     CreateBiTree(T, s);
 //    PostOrderTraverse(T, &visit);
-    ClearBitTree(T);
-    PostOrderTraverse(T, &visit);
+//    PostOrderTraverse(T, &visit);
+//    Tree_Node *node = T->root->r_child;
+//    printf("%d", Value(T, node));
+    L_NODE head;
+    head.next = NULL;
+    Tree_Node node1, node2;
+    node1.data = 1;
+    node2.data = 2;
+    PushBack(&head, &node1);
+    PushBack(&head, &node2);
+    Tree_Node *node1_p, *node2_p, *node3_p;
+    node1_p = PopFront(&head);
+    node2_p = PopFront(&head);
+    node3_p = PopFront(&head);
+
 }
 
-void visit(Node *n){
+void visit(Tree_Node *n) {
     printf("%d ", n->data);
 }

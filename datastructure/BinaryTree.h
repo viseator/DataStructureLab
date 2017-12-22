@@ -9,22 +9,29 @@
 
 #define ElemType int
 #define RESULT_OK 0x0
-#define NULL_PTR_ERROR 0x1
-#define RESULT_UNDEFINED_ERROR 0x2
+#define NULL_PTR_ERROR (-1)
+#define RESULT_UNDEFINED_ERROR (-2)
+#define DO_NOT_CONTAIN (-3)
 
-#define NULL_CHECK if (t == NULL) { return NULL_PTR_ERROR; }
+#define TREE_NULL_CHECK if (t == NULL) { return NULL_PTR_ERROR; }
 
+#define CONTAIN_CHECK if (!Contains(t->root, e)) { return DO_NOT_CONTAIN; }
 
 typedef struct NODE {
     ElemType data;
     struct NODE *l_child;
     struct NODE *r_child;
-} Node;
+} Tree_Node;
 
 typedef struct BINARY_TREE {
-    Node *root;
+    Tree_Node *root;
     int size;
 } BinaryTree;
+
+typedef struct LIST_NODE {
+    Tree_Node *data;
+    struct LIST_NODE *next;
+} L_NODE;
 
 int InitBiTree(BinaryTree **t);
 
@@ -38,40 +45,36 @@ bool BiTreeEmpty(BinaryTree *t);
 
 int BiTreeDepth(BinaryTree *t);
 
-Node *Root(BinaryTree *t);
+Tree_Node *Root(BinaryTree *t);
 
-ElemType Value(BinaryTree *t, Node *e);
+ElemType Value(BinaryTree *t, Tree_Node *e);
 
-int Assign(BinaryTree *t, Node *e, ElemType value);
+int Assign(BinaryTree *t, Tree_Node *e, ElemType value);
 
-Node *Parent(BinaryTree *t, Node *e);
+Tree_Node *Parent(BinaryTree *t, Tree_Node *e);
 
-Node *LeftChild(BinaryTree *t, Node *e);
+Tree_Node *LeftChild(BinaryTree *t, Tree_Node *e);
 
-Node *rightChild(BinaryTree *t, Node *e);
+Tree_Node *RightChild(BinaryTree *t, Tree_Node *e);
 
-Node *leftSibling(BinaryTree *t, Node *e);
+Tree_Node *LeftSibling(BinaryTree *t, Tree_Node *e);
 
-Node *rightSibling(BinaryTree *t, Node *e);
+Tree_Node *RightSibling(BinaryTree *t, Tree_Node *e);
 
-int InsertChild(BinaryTree *t, Node *p, int LR, BinaryTree *c);
+int InsertChild(BinaryTree *t, Tree_Node *e, int LR, BinaryTree *c);
 
-int DeleteChild(BinaryTree *t, Node *p, int LR);
+int DeleteChild(BinaryTree *t, Tree_Node *e, int LR);
 
-int PreOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
+int PreOrderTraverse(BinaryTree *t, void (Visit)(Tree_Node *n));
 
-int InOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
+int InOrderTraverse(BinaryTree *t, void (Visit)(Tree_Node *n));
 
-int PostOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
+int PostOrderTraverse(BinaryTree *t, void (Visit)(Tree_Node *n));
 
-int LevelOrderTraverse(BinaryTree *t, void (Visit)(Node *n));
+int LevelOrderTraverse(BinaryTree *t, void (Visit)(Tree_Node *n));
 
-int PreOrderTraverseNode(Node *n, void (Visit)(Node *n));
+void PushBack(L_NODE *head, Tree_Node *data);
 
-int InOrderTraverseNode(Node *n, void (Visit)(Node *n));
-
-int PostOrderTraverseNode(Node *n, void (Visit)(Node *n));
-
-int LevelOrderTraverseNode(Node *n, void (Visit)(Node *n));
+Tree_Node *PopFront(L_NODE *head);
 
 #endif; //DATASTRUCTURELAB_BINARYTREE_H

@@ -9,6 +9,8 @@
 /home/viseator/study/DataStructureLab/datastructure/BinaryTree.c
 BinaryTree.h
 /home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
+linkedlist.h
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
 stdio.h
 -
 stdlib.h
@@ -18,6 +20,12 @@ string.h
 
 /home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
 stdbool.h
+-
+
+/home/viseator/study/DataStructureLab/datastructure/linkedlist.h
+stdbool.h
+-
+stdlib.h
 -
 
 /home/viseator/study/DataStructureLab/tri_tree_menu.c
