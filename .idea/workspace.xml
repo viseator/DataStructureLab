@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/datastructure/BinaryTree.c" line="290" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/datastructure/BinaryTree.c" line="291" mnemonic="0" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
@@ -16,12 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="890d5e60-3c36-4efa-9bea-734b1a8eef30" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o" afterPath="$PROJECT_DIR$/CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o" afterPath="$PROJECT_DIR$/CMakeFiles/DataStructureLab.dir/tri_tree_menu.c.o" />
-      <change beforePath="$PROJECT_DIR$/DataStructureLab" afterPath="$PROJECT_DIR$/DataStructureLab" />
       <change beforePath="$PROJECT_DIR$/datastructure/BinaryTree.c" afterPath="$PROJECT_DIR$/datastructure/BinaryTree.c" />
-      <change beforePath="$PROJECT_DIR$/datastructure/BinaryTree.h" afterPath="$PROJECT_DIR$/datastructure/BinaryTree.h" />
-      <change beforePath="$PROJECT_DIR$/tri_tree_menu.c" afterPath="$PROJECT_DIR$/tri_tree_menu.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -58,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tri_tree_menu.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tri_tree_menu.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tri_tree_menu.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="607">
@@ -103,18 +98,18 @@
       <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="832">
+              <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinaryTree.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="347" column="5" lean-forward="false" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="212" column="4" lean-forward="false" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -173,8 +168,8 @@
         <option value="$PROJECT_DIR$/datastructure/linkedlist.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/datastructure/BinaryTree.h" />
-        <option value="$PROJECT_DIR$/datastructure/BinaryTree.c" />
         <option value="$PROJECT_DIR$/tri_tree_menu.c" />
+        <option value="$PROJECT_DIR$/datastructure/BinaryTree.c" />
       </list>
     </option>
   </component>
@@ -290,12 +285,12 @@
       <workItem from="1513922143308" duration="210000" />
       <workItem from="1513922388548" duration="295000" />
       <workItem from="1513922698188" duration="26000" />
-      <workItem from="1513922738464" duration="5071000" />
+      <workItem from="1513922738464" duration="5465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69236000" />
+    <option name="totallyTimeSpent" value="69630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="3" width="1920" height="1077" extended-state="7" />
@@ -733,22 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="347" column="5" lean-forward="false" selection-start-line="347" selection-start-column="5" selection-end-line="347" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tri_tree_menu.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
@@ -756,6 +735,22 @@
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datastructure/BinaryTree.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="212" column="4" lean-forward="false" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

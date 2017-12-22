@@ -33,7 +33,6 @@ int InOrderTraverseNode(Tree_Node *n, void (*Visit)(Tree_Node *));
 int CREATE_TREE_INDEX = 0;
 int SIZE_COUNT = 0;
 
-
 int InitBiTree(BinaryTree **t) {
     if (t == NULL) {
         return NULL_PTR_ERROR;
@@ -207,10 +206,16 @@ int PostOrderTraverse(BinaryTree *t, void (*Visit)(Tree_Node *)) {
 
 int LevelOrderTraverse(BinaryTree *t, void (*Visit)(Tree_Node *)) {
     TREE_NULL_CHECK
-    int pos = 1;
-
-
-    return 0;
+    L_NODE head;
+    head.next = NULL;
+    PushBack(&head, t->root);
+    Tree_Node *c_node;
+    while ((c_node = PopFront(&head))) {
+        Visit(c_node);
+        PushBack(&head, c_node->l_child);
+        PushBack(&head, c_node->r_child);
+    }
+    return RESULT_OK;
 }
 
 int PreOrderTraverseNode(Tree_Node *n, void (*Visit)(Tree_Node *)) {
@@ -346,6 +351,9 @@ Tree_Node *RightSiblingNode(Tree_Node *n, Tree_Node *e) {
 }
 
 void PushBack(L_NODE *head, Tree_Node *data) {
+    if (data == NULL) {
+        return;
+    }
     while (head->next != NULL) {
         head = head->next;
     }
