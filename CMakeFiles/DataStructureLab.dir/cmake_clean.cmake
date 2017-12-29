@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DataStructureLab.dir/main.cpp.o"
-  "CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o"
-  "CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o"
+  "CMakeFiles/DataStructureLab.dir/datastructure/Graph.c.o"
+  "CMakeFiles/DataStructureLab.dir/GraphMenu.cpp.o"
   "DataStructureLab.pdb"
   "DataStructureLab"
 )

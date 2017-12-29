@@ -1,4 +1,4 @@
-/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/viseator/study/DataStructureLab
+/home/viseator/clion-2017.2.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/x86_64-w64-mingw32-cc -DCMAKE_CXX_COMPILER=/usr/bin/x86_64-w64-mingw32-c++ -G "CodeBlocks - Unix Makefiles" /home/viseator/study/DataStructureLab
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/viseator/study/DataStructureLab

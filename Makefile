@@ -123,32 +123,59 @@ DataStructureLab/fast:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/build
 .PHONY : DataStructureLab/fast
 
-datastructure/BinaryTree.o: datastructure/BinaryTree.c.o
+GraphMenu.o: GraphMenu.cpp.o
 
-.PHONY : datastructure/BinaryTree.o
+.PHONY : GraphMenu.o
 
 # target to build an object file
-datastructure/BinaryTree.c.o:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o
-.PHONY : datastructure/BinaryTree.c.o
+GraphMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/GraphMenu.cpp.o
+.PHONY : GraphMenu.cpp.o
 
-datastructure/BinaryTree.i: datastructure/BinaryTree.c.i
+GraphMenu.i: GraphMenu.cpp.i
 
-.PHONY : datastructure/BinaryTree.i
+.PHONY : GraphMenu.i
 
 # target to preprocess a source file
-datastructure/BinaryTree.c.i:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.i
-.PHONY : datastructure/BinaryTree.c.i
+GraphMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/GraphMenu.cpp.i
+.PHONY : GraphMenu.cpp.i
 
-datastructure/BinaryTree.s: datastructure/BinaryTree.c.s
+GraphMenu.s: GraphMenu.cpp.s
 
-.PHONY : datastructure/BinaryTree.s
+.PHONY : GraphMenu.s
 
 # target to generate assembly for a file
-datastructure/BinaryTree.c.s:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.s
-.PHONY : datastructure/BinaryTree.c.s
+GraphMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/GraphMenu.cpp.s
+.PHONY : GraphMenu.cpp.s
+
+datastructure/Graph.o: datastructure/Graph.c.o
+
+.PHONY : datastructure/Graph.o
+
+# target to build an object file
+datastructure/Graph.c.o:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/Graph.c.o
+.PHONY : datastructure/Graph.c.o
+
+datastructure/Graph.i: datastructure/Graph.c.i
+
+.PHONY : datastructure/Graph.i
+
+# target to preprocess a source file
+datastructure/Graph.c.i:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/Graph.c.i
+.PHONY : datastructure/Graph.c.i
+
+datastructure/Graph.s: datastructure/Graph.c.s
+
+.PHONY : datastructure/Graph.s
+
+# target to generate assembly for a file
+datastructure/Graph.c.s:
+	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/datastructure/Graph.c.s
+.PHONY : datastructure/Graph.c.s
 
 main.o: main.cpp.o
 
@@ -177,33 +204,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tri_tree_menu.o: tri_tree_menu.cpp.o
-
-.PHONY : tri_tree_menu.o
-
-# target to build an object file
-tri_tree_menu.cpp.o:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o
-.PHONY : tri_tree_menu.cpp.o
-
-tri_tree_menu.i: tri_tree_menu.cpp.i
-
-.PHONY : tri_tree_menu.i
-
-# target to preprocess a source file
-tri_tree_menu.cpp.i:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.i
-.PHONY : tri_tree_menu.cpp.i
-
-tri_tree_menu.s: tri_tree_menu.cpp.s
-
-.PHONY : tri_tree_menu.s
-
-# target to generate assembly for a file
-tri_tree_menu.cpp.s:
-	$(MAKE) -f CMakeFiles/DataStructureLab.dir/build.make CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.s
-.PHONY : tri_tree_menu.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataStructureLab"
-	@echo "... datastructure/BinaryTree.o"
-	@echo "... datastructure/BinaryTree.i"
-	@echo "... datastructure/BinaryTree.s"
+	@echo "... GraphMenu.o"
+	@echo "... GraphMenu.i"
+	@echo "... GraphMenu.s"
+	@echo "... datastructure/Graph.o"
+	@echo "... datastructure/Graph.i"
+	@echo "... datastructure/Graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tri_tree_menu.o"
-	@echo "... tri_tree_menu.i"
-	@echo "... tri_tree_menu.s"
 .PHONY : help
 
 

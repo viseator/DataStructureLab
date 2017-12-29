@@ -3,10 +3,12 @@
 //
 
 #include "main.h"
-#include "tri_tree_menu.h"
+#include "GraphMenu.h"
+
 
 int main() {
 //    return linear_table_menu();
 //    return linked_list_menu();
-    return tri_tree_menu();
+//    return tri_tree_menu();
+    return 0;
 }

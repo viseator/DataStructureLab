@@ -1,1 +1,1 @@
-/usr/bin/c++  -static -static-libgcc -static-libstdc++ -g   CMakeFiles/DataStructureLab.dir/main.cpp.o CMakeFiles/DataStructureLab.dir/datastructure/BinaryTree.c.o CMakeFiles/DataStructureLab.dir/tri_tree_menu.cpp.o  -o DataStructureLab 
+/usr/bin/x86_64-w64-mingw32-c++  -static -static-libgcc -static-libstdc++ -g   CMakeFiles/DataStructureLab.dir/main.cpp.o CMakeFiles/DataStructureLab.dir/datastructure/Graph.c.o CMakeFiles/DataStructureLab.dir/GraphMenu.cpp.o  -o DataStructureLab 

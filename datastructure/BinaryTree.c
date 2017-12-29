@@ -381,6 +381,8 @@ Tree_Node *PopFront(L_NODE *head) {
         return NULL;
     }
     Tree_Node *e = head->next->data;
-    head->next = head->next->next;
+    L_NODE *n = head->next->next;
+    free(head->next);
+    head->next = n;
     return e;
 }

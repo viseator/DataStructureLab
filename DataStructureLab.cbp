@@ -44,13 +44,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0/x86_64-w64-mingw32"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/viseator/study/DataStructureLab/Makefile&quot;  VERBOSE=1 DataStructureLab"/>
@@ -66,13 +65,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include-fixed"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0/x86_64-w64-mingw32"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include/c++/7.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/viseator/study/DataStructureLab/Makefile&quot;  VERBOSE=1 DataStructureLab/fast"/>
@@ -82,22 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/BinaryTree.c">
+		<Unit filename="/home/viseator/study/DataStructureLab/GraphMenu.cpp">
 			<Option target="DataStructureLab"/>
 		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h">
+		<Unit filename="/home/viseator/study/DataStructureLab/GraphMenu.h">
+			<Option target="DataStructureLab"/>
+		</Unit>
+		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/Graph.c">
+			<Option target="DataStructureLab"/>
+		</Unit>
+		<Unit filename="/home/viseator/study/DataStructureLab/datastructure/Graph.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.cpp">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/main.h">
-			<Option target="DataStructureLab"/>
-		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.cpp">
-			<Option target="DataStructureLab"/>
-		</Unit>
-		<Unit filename="/home/viseator/study/DataStructureLab/tri_tree_menu.h">
 			<Option target="DataStructureLab"/>
 		</Unit>
 		<Unit filename="/home/viseator/study/DataStructureLab/CMakeLists.txt">

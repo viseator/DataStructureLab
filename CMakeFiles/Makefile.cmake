@@ -26,9 +26,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/Platform/Linux.cmake"
   "/home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
   "/home/viseator/clion-2017.2.1/bin/cmake/share/cmake-3.9/Modules/ProcessorCount.cmake"
-  "CMakeFiles/3.9.4/CMakeCCompiler.cmake"
-  "CMakeFiles/3.9.4/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.9.4/CMakeSystem.cmake"
+  "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
+  "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.9.6/CMakeSystem.cmake"
   "CMakeLists.txt"
   )
 
