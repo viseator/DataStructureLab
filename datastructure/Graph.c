@@ -5,15 +5,17 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <zconf.h>
+#include <stdio.h>
 #include "Graph.h"
 
 void DFS(Graph *G, int v, void (*visit)(Vex *), bool *visited);
 
-void PushBack(L_NODE *head, int data) ;
+void PushBack(L_NODE *head, int data);
 
-int PopFront(L_NODE *head) ;
+int PopFront(L_NODE *head);
 
-void BFS(Graph *G, int v, void (*visit)(Vex *), bool *visited) ;
+void BFS(Graph *G, int v, void (*visit)(Vex *), bool *visited);
 
 int CreateGraph(Graph **G, const ElemType *vex_data, int vex_size, const int *edge_info, int edge_info_size) {
     NULL_CHECK
@@ -23,17 +25,17 @@ int CreateGraph(Graph **G, const ElemType *vex_data, int vex_size, const int *ed
     int i = 0;
     for (; i < vex_size; ++i) {
         (*G)->vexs[i].data = vex_data[i];
-        (*G)->vexs[i].first = NULL;
+        (*G)->vexs[i].first.next = NULL;
     }
     for (i = 0; i < edge_info_size; ++i) {
         int iv = LocateVex(*G, edge_info[i]);
-        Edge *e = (*G)->vexs[iv].first.next;
-        while (e != NULL) {
+        Edge *e = &(*G)->vexs[iv].first;
+        while (e->next != NULL) {
             e = e->next;
         }
-        e = (Edge *) calloc(1, sizeof(Edge));
-        e->next = NULL;
-        e->vex = LocateVex(*G, edge_info[++i]);
+        e->next = (Edge *) calloc(1, sizeof(Edge));
+        e->next->next = NULL;
+        e->next->vex = LocateVex(*G, edge_info[++i]);
         ++(*G)->edge_size;
     }
     return RESULT_OK;
@@ -68,24 +70,29 @@ int LocateVex(Graph *G, ElemType u) {
             return i;
         }
     }
-    return NULL;
+    return -1;
 }
 
-ElemType GetVex(Graph *G, int i) {
-    NULL_CHECK
-    return G->vexs[i].data;
+Vex *GetVex(Graph *G, int i) {
+    if (G == NULL || i < 0 || i > G->vex_size - 1) {
+        return NULL;
+    }
+    return &G->vexs[i];
 }
 
 int PutVex(Graph *G, Vex *v, ElemType u) {
     NULL_CHECK
-    CONTAIN_CHECK
     v->data = u;
     return RESULT_OK;
 }
 
 Vex *FirstAdjVex(Graph *G, Vex *v) {
-    NULL_CHECK
-    CONTAIN_CHECK
+    if (G == NULL) { return NULL; }
+    {
+        bool contain = false;
+        for (int i = 0; i < G->vex_size; ++i) { if (&G->vexs[i] == v) { contain = true; }}
+        if (!contain) return NULL;
+    }
     if (v->first.next == NULL) {
         return NULL;
     }
@@ -93,13 +100,17 @@ Vex *FirstAdjVex(Graph *G, Vex *v) {
 }
 
 Vex *NextAdjVex(Graph *G, Vex *v, Vex *w) {
-    NULL_CHECK
-    CONTAIN_CHECK
+    if (G == NULL) { return NULL; }
+    {
+        bool contain = false;
+        for (int i = 0; i < G->vex_size; ++i) { if (&G->vexs[i] == v) { contain = true; }}
+        if (!contain) return NULL;
+    }
     Edge *e = v->first.next;
-    while (e != NULL && &G->vexs[e->vex] != w) {
+    while (e != NULL && G->vexs[e->vex].data != w->data) {
         e = e->next;
     }
-    if (e == NULL) {
+    if (e == NULL || e->next == NULL) {
         return NULL;
     }
     return &G->vexs[e->next->vex];
@@ -174,8 +185,8 @@ void DFS(Graph *G, int v, void (*visit)(Vex *), bool *visited) {
     while (e != NULL) {
         if (visited[e->vex] == false) {
             DFS(G, e->vex, visit, visited);
-            e = e->next;
         }
+        e = e->next;
     }
 }
 
@@ -199,6 +210,9 @@ void BFS(Graph *G, int v, void (*visit)(Vex *), bool *visited) {
     PushBack(&head, v);
     int current;
     while ((current = PopFront(&head)) != INT_MAX) {
+        if (visited[current] == true) {
+            continue;
+        }
         visit(&G->vexs[current]);
         visited[current] = true;
         Edge *e = G->vexs[current].first.next;
@@ -206,6 +220,7 @@ void BFS(Graph *G, int v, void (*visit)(Vex *), bool *visited) {
             if (visited[e->vex] == false) {
                 PushBack(&head, e->vex);
             }
+            e = e->next;
         }
     }
 }
@@ -230,4 +245,47 @@ int PopFront(L_NODE *head) {
     free(head->next);
     head->next = n;
     return e;
+}
+
+int ShowAllEdges(Graph *G) {
+    NULL_CHECK
+    for (int i = 0; i < G->vex_size; ++i) {
+        Edge *e = G->vexs[i].first.next;
+        while (e != NULL) {
+            printf("%d - > %d\n", G->vexs[i].data, G->vexs[e->vex].data);
+            e = e->next;
+        }
+    }
+    return RESULT_OK;
+}
+
+int InsertArc(Graph *G, Vex *v, Vex *w) {
+    NULL_CHECK
+    Edge *e = &v->first;
+    while (e->next != NULL) {
+        e = e->next;
+    }
+    Edge *new_edge = (Edge *) calloc(1, sizeof(Edge));
+    new_edge->next = NULL;
+    new_edge->vex = LocateVex(G, w->data);
+    e->next = new_edge;
+    ++G->edge_size;
+    return RESULT_OK;
+}
+
+int DeleteArc(Graph *G, Vex *v, Vex *w) {
+    NULL_CHECK
+    Edge *e = &v->first;
+    while (e->next != NULL && G->vexs[e->next->vex].data != w->data) {
+        e = e->next;
+    }
+    if (e->next == NULL) {
+        return NOT_CONTAIN_ERROR;
+    }
+
+    Edge *next = e->next->next;
+    free(e->next);
+    e->next = next;
+    --G->edge_size;
+    return RESULT_OK;
 }

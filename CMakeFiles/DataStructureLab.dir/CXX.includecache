@@ -6,27 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
-stdbool.h
+/home/viseator/study/DataStructureLab/GraphMenu.cpp
+GraphMenu.h
+/home/viseator/study/DataStructureLab/GraphMenu.h
+datastructure/Graph.h
+/home/viseator/study/DataStructureLab/datastructure/Graph.h
+cstdio
 -
+iostream
+-
+
+/home/viseator/study/DataStructureLab/GraphMenu.h
+
+/home/viseator/study/DataStructureLab/datastructure/Graph.h
 
 /home/viseator/study/DataStructureLab/main.cpp
 main.h
 /home/viseator/study/DataStructureLab/main.h
-tri_tree_menu.h
-/home/viseator/study/DataStructureLab/tri_tree_menu.h
+GraphMenu.h
+/home/viseator/study/DataStructureLab/GraphMenu.h
 
 /home/viseator/study/DataStructureLab/main.h
-
-/home/viseator/study/DataStructureLab/tri_tree_menu.cpp
-iostream
--
-cstdio
--
-tri_tree_menu.h
-/home/viseator/study/DataStructureLab/tri_tree_menu.h
-datastructure/BinaryTree.h
-/home/viseator/study/DataStructureLab/datastructure/BinaryTree.h
-
-/home/viseator/study/DataStructureLab/tri_tree_menu.h
 

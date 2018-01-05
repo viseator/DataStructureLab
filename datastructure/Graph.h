@@ -10,6 +10,7 @@
 #define RESULT_OK 0
 #define NULL_PTR_ERROR -1
 #define NOT_CONTAIN_ERROR -2
+#define INDEX_OUT_OF_RANGE_ERROR -3
 
 
 #define NULL_CHECK if (G == NULL) { return NULL_PTR_ERROR; }
@@ -42,7 +43,7 @@ int DestroyGraph(Graph **G);
 
 int LocateVex(Graph *G, ElemType u);
 
-ElemType GetVex(Graph *G, int i);
+Vex *GetVex(Graph *G, int i);
 
 int PutVex(Graph *G, Vex *v, ElemType u);
 
@@ -58,5 +59,10 @@ int DFSTraverse(Graph *G, void (*visit)(Vex *v));
 
 int BFSTraverse(Graph *G, void (*visit)(Vex *v));
 
+int ShowAllEdges(Graph *G);
+
+int InsertArc(Graph *G, Vex *v, Vex *w);
+
+int DeleteArc(Graph *G, Vex *v, Vex *w);
 
 #endif //DATASTRUCTURELAB_GRAPH_H
